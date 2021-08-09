@@ -2,6 +2,10 @@
   <div class="landingPage">
     <h1 class="landingPage__heading">Källenfors</h1>
     <h3 class="landingPage__subheading">Law & Consulting</h3>
+    <div class="socialMedia">
+      <img class="socialMedia__logo" src="~/assets/images/instalogo.png" />
+      <img class="socialMedia__logo" src="~/assets/images/linkedinlogo.png" />
+    </div>
   </div>
 </template>
 
@@ -27,6 +31,16 @@ export default {}
   &__subheading {
     font-family: 'Playfair regular', serif;
     font-size: 1.5rem;
+  }
+}
+
+.socialMedia {
+  position: absolute;
+  left: 5px;
+
+  &__logo {
+    max-height: 42px;
+    display: block;
   }
 }
 </style>
