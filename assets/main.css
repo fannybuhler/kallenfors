@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Playfair black';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('~assets/fonts/PlayfairDisplay-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}

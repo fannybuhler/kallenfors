@@ -1,6 +1,9 @@
 <template>
   <div>
-    <Navbar />
-    <h1>About Page</h1>
+    <h1>Om oss</h1>
   </div>
 </template>
+
+<style lang="scss">
+
+</style>
