@@ -6,6 +6,7 @@
     <NuxtLink to="/highlight">Interimsuppdrag</NuxtLink>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .navbar {
   font-size: 18px;
