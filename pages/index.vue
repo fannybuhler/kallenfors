@@ -1,5 +1,6 @@
 <template>
   <div class="landingPage">
+    <div class="landingPage__circle"></div>
     <h1 class="landingPage__heading">Källenfors</h1>
     <h3 class="landingPage__subheading">Law & Consulting</h3>
     <div class="socialMedia">
@@ -20,17 +21,31 @@ export default {}
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fff; /* Needed for mix-blend-mode */
+  isolation: isolate; /* Without isolation, the background color will be taken into account */
+
+  &__circle {
+    height: 144px;
+    width: 144px;
+    border-radius: 50%;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    position: relative;
+    top: 4rem;
+    left: 11rem;
+  }
 
   &__heading {
     text-transform: uppercase;
-    font-weight: 200;
-    font-size: 4rem;
+    font-weight: 400;
+    font-size: 4.5rem;
     margin: .5rem 0;
   }
 
   &__subheading {
     font-family: 'Playfair regular', serif;
     font-size: 1.5rem;
+    font-weight: 200;
   }
 }
 
@@ -41,6 +56,7 @@ export default {}
   &__logo {
     max-height: 42px;
     display: block;
+    margin: .5rem;
   }
 }
 </style>
