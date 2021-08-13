@@ -1,12 +1,16 @@
 <template>
-  <div class="landingPage">
-    <div class="landingPage__circle"></div>
-    <h1 class="landingPage__heading">Källenfors</h1>
-    <h3 class="landingPage__subheading">Law & Consulting</h3>
-    <div class="socialMedia">
-      <img class="socialMedia__logo" src="~/assets/images/instalogo.png" />
-      <img class="socialMedia__logo" src="~/assets/images/linkedinlogo.png" />
+  <div>
+    <div class="landingPage">
+      <div class="landingPage__circle"></div>
+      <h1 class="landingPage__heading">Källenfors</h1>
+      <h3 class="landingPage__subheading">Law & Consulting</h3>
+      <div class="socialMedia">
+        <img class="socialMedia__logo" src="~/assets/images/instalogo.png" />
+        <img class="socialMedia__logo" src="~/assets/images/linkedinlogo.png" />
+      </div>
     </div>
+    <AboutUs />
+    <Competence />
   </div>
 </template>
 
@@ -16,7 +20,7 @@ export default {}
 
 <style lang="scss" scoped>
 .landingPage {
-  height: 80vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +50,7 @@ export default {}
     font-family: 'Playfair regular', serif;
     font-size: 1.5rem;
     font-weight: 200;
+    padding-bottom: 10rem;
   }
 }
 

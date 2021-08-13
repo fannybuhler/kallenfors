@@ -29,8 +29,14 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background: $beige;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 #pageWrap {
-  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
