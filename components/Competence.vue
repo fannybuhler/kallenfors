@@ -1,12 +1,34 @@
 <template>
   <div class="expertise">
     <h3 class="expertise__heading">Kompetensområden</h3>
-    <CompetenceArea />
-    <CompetenceArea />
-    <CompetenceArea />
-    <CompetenceArea />
-    <CompetenceArea />
-    <CompetenceArea />
+    <div class="expertise__wrapper">
+      <CompetenceArea 
+        title="Affärsjuridik" 
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        imageUrl="~/assets/images/handshake.png"
+      />
+      <CompetenceArea 
+        title="Bolagsrätt" 
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        imageUrl="~/assets/images/risk.png"
+      />
+      <CompetenceArea 
+        title="Komersiella avtal"  
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      />
+      <CompetenceArea 
+        title="Tvistelösning" 
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      />
+      <CompetenceArea 
+        title="Styrelsearbete" 
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      />
+      <CompetenceArea 
+        title="Marknadsföring" 
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      />
+    </div>
   </div>
 </template>
 
@@ -16,8 +38,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .expertise {
   background: #fff;
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0 2rem 0;
+    font-family: 'Playfair regular';
+    font-weight: 200;
+    font-size: 32px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
 }
 </style>

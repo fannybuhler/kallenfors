@@ -1,45 +1,69 @@
 <template>
-  <div class="competenceArea dummy">
-    <img class="competenceArea__icon" src="~/assets/images/handshake.png" alt="vector icon of handshake">
-    <div>
-      <h3 class="competenceArea__heading">Affärsjuridik</h3>
-      <span class="competenceArea__span"></span>
-      <p class="competenceArea__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+  <div class="competence">
+    <img class="competence__icon" :src="{imageUrl}" />
+    <div class="competence__text-wrapper">
+      <h3 class="competence__heading">{{ title }}</h3>
+      <div class="competence__span"></div>
+      <p class="competence__body">{{ description }}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  props: {
+    title: String,
+    description: String,
+    imageUrl: String,
+ }
 }
 </script>
 
 <style lang="scss" scoped>
-.dummy {
-  border: 2px dotted red;
-  background: rgb(255, 235, 235);
-  margin: 5px;
-}
-.competenceArea {
+// .dummy {
+//   border: 2px dotted red;
+//   background: rgb(255, 235, 235);
+//   margin: 5px;
+// }
+.competence {
   display: flex;
+  width: fit-content;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   &__icon {
     border: 1px solid black;
     border-radius: 50%;
+    margin-right: 1rem;
+    height: 64px;
+    width: 64px;
+    padding: 15px;
   }
 
   &__heading {
-
+    font-family: 'Playfair regular';
+    font-weight: 200;
+    font-size: 22px;
+    margin: .5rem 0 .5rem 0;
   }
 
   &__span {
     background: $black;
     color: $black;
+    height: 2px;
+    width: 25px;
   }
 
   &__body {
-
+    font-size: 12px;
+    word-break: 5;
   }
 }
 </style>
