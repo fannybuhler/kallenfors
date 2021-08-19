@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   padding-top: 36px;
-  background: #fff;
+  background: $white;
 }
 
 a {

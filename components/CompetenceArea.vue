@@ -1,6 +1,6 @@
 <template>
   <div class="competence">
-    <img class="competence__icon" :src="{imageUrl}" />
+    <img class="competence__icon" :src="require(`@/assets/images/${imageUrl}`)" />
     <div class="competence__text-wrapper">
       <h3 class="competence__heading">{{ title }}</h3>
       <div class="competence__span"></div>
@@ -42,8 +42,8 @@ export default {
     border: 1px solid black;
     border-radius: 50%;
     margin-right: 1rem;
-    height: 64px;
-    width: 64px;
+    max-height: 64px;
+    max-width: 64px;
     padding: 15px;
   }
 

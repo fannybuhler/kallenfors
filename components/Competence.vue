@@ -5,28 +5,32 @@
       <CompetenceArea 
         title="Affärsjuridik" 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        imageUrl="~/assets/images/handshake.png"
+        imageUrl="handshake.png"
       />
       <CompetenceArea 
         title="Bolagsrätt" 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        imageUrl="~/assets/images/risk.png"
+        imageUrl="risk.png"
       />
       <CompetenceArea 
         title="Komersiella avtal"  
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        imageUrl="agreement.png"
       />
       <CompetenceArea 
         title="Tvistelösning" 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        imageUrl="hammer.png"
       />
       <CompetenceArea 
         title="Styrelsearbete" 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        imageUrl="suitcase.png"
       />
       <CompetenceArea 
         title="Marknadsföring" 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        imageUrl="seo.png"
       />
     </div>
   </div>
@@ -40,7 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 .expertise {
-  background: #fff;
+  background: $white;
 
   &__heading {
     display: flex;

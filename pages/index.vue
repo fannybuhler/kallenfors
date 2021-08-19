@@ -25,14 +25,14 @@ export default {}
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff; /* Needed for mix-blend-mode */
+  background-color: $white; /* Needed for mix-blend-mode */
   isolation: isolate; /* Without isolation, the background color will be taken into account */
 
   &__circle {
     height: 144px;
     width: 144px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $white;
     mix-blend-mode: difference;
     position: relative;
     top: 4rem;
