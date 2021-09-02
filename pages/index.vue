@@ -1,12 +1,13 @@
 <template>
   <div>
     <div class="landingPage">
-      <div class="landingPage__circle"></div>
+      <div class="landingPage__color-block"></div>
+      <img src="~/assets/images/photos/landingpage.png" alt="">
       <h1 class="landingPage__heading">Källenfors</h1>
       <h3 class="landingPage__subheading">Law & Consulting</h3>
       <div class="socialMedia">
-        <img class="socialMedia__logo" src="~/assets/images/instalogo.png" />
-        <img class="socialMedia__logo" src="~/assets/images/linkedinlogo.png" />
+        <img class="socialMedia__logo" src="~/assets/images/icons/instalogo.png" />
+        <img class="socialMedia__logo" src="~/assets/images/icons/linkedinlogo.png" />
       </div>
     </div>
     <AboutUs />
@@ -25,17 +26,14 @@ export default {}
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $white; /* Needed for mix-blend-mode */
-  isolation: isolate; /* Without isolation, the background color will be taken into account */
+  background-color: $white; 
 
-  &__circle {
-    height: 144px;
-    width: 144px;
-    border-radius: 50%;
-    background-color: $white;
-    mix-blend-mode: difference;
-    position: relative;
-    top: 4rem;
+  &__color-block {
+    height: 119%;
+    width: 19rem;
+    position: absolute;
+    background-color: #F8BD59;
+    top: 0;
     left: 11rem;
   }
 
@@ -44,6 +42,7 @@ export default {}
     font-weight: 400;
     font-size: 4.5rem;
     margin: .5rem 0;
+    z-index: 1;
   }
 
   &__subheading {
@@ -51,6 +50,7 @@ export default {}
     font-size: 1.5rem;
     font-weight: 200;
     padding-bottom: 10rem;
+    z-index: 1;
   }
 }
 

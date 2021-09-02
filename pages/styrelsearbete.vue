@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Om oss</h1>
+    <h1>Styrelsearbete</h1>
   </div>
 </template>
 

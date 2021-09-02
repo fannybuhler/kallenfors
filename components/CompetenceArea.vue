@@ -1,6 +1,6 @@
 <template>
   <div class="competence">
-    <img class="competence__icon" :src="require(`@/assets/images/${imageUrl}`)" />
+    <img class="competence__icon" :src="require(`@/assets/images/icons/${imageUrl}`)" />
     <div class="competence__text-wrapper">
       <h3 class="competence__heading">{{ title }}</h3>
       <div class="competence__span"></div>
