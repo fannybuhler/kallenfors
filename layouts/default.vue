@@ -37,7 +37,6 @@ body {
 }
 
 #pageWrap {
-  margin: 0 auto;
   margin-bottom: 3rem;
 }
 

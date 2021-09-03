@@ -1,5 +1,6 @@
 <template>
   <nav class="navbar">
+    <!-- Not the best solution using mediaqueries in each component to determine mobile or desktop navigation-->
     <MenuBurger />
     <MenuSidebar>
       <ul class="navbar__list">
@@ -47,18 +48,13 @@
         </li>
       </ul>
     </MenuSidebar>
-    <!-- <MenuDesktop /> -->
+    <MenuDesktop />
   </nav>
-
 </template>
 
 <script>
 import { store, mutations } from "@/store.js";
 export default {
-  // data: () => ({
-  //   isMobile: window.innerWidth <= 1024 
-  // }),
-
   computed: {
     isPanelOpen() {
       return store.isNavOpen;
@@ -81,7 +77,6 @@ export default {
 
   &__list {
     list-style: none;
-    z-index: 1;
     padding: 0;
   }
 
@@ -94,34 +89,19 @@ a {
   text-decoration: none;
   margin: 0 1.5rem;
   display: block;
-  position: relative;
   padding: 0.2em 0;
 }
 
-/* Underline animation */
-a {
-  &:link {
-    color: $black;
-  }
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: $black;
+}
 
-  &:visited {
-    color: $black;
-  }
-
-  &:active {
-    color: $black;
-  }
-
-  &:focus::after {
-    transform: scale(1);
-  }
-
-  &:hover {
-    color: $black;
-
-    &::after {
-      transform: scale(1);
-    }
+@media only screen and (min-width: $desktop) {
+  .navbar {
+    justify-content: center;
   }
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="landingPage">
-      <!-- <div class="landingPage__color-block"></div> -->
+    <div class="landing-page">
+      <!-- <div class="landing-page__color-block"></div> -->
       <img src="~/assets/images/photos/landingpage.png" alt="">
-      <h1 class="landingPage__heading">Källenfors</h1>
-      <h3 class="landingPage__subheading">Law & Consulting</h3>
+      <h1 class="landing-page__heading">Källenfors</h1>
+      <h3 class="landing-page__subheading">Law & Consulting</h3>
     </div>
     <AboutUs />
     <Competence />
@@ -16,7 +16,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.landingPage {
+.landing-page {
   height: 100vh;
   display: flex;
   flex-direction: column;

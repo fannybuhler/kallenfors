@@ -1,5 +1,5 @@
 <template>
-  <div class="burger" :class="{ 'active' : isBurgerActive}" @click.prevent="toggle">
+  <div id="burger" :class="{ 'active' : isBurgerActive}" @click.prevent="toggle">
     <slot>
       <button type="button" class="burger-button" title="Menu">
         <span class="burger-bar burger-bar-1"></span>
@@ -65,44 +65,46 @@ button:focus {
 }
 
 .burger-bar-1 {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .burger-bar-2 {
-    transform-origin: 100% 50%;
-    transform: scaleX(.8);
+  transform-origin: 100% 50%;
+  transform: scaleX(.8);
 }
 
 .burger-button:hover .burger-bar-2 {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .no-touchevents .burger-bar-2:hover {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .burger-bar-3 {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 #burger.active .burger-button {
-    transform: rotate(-180deg);
-}
-
-#burger.active .burger-bar {
-    background-color: #fff;
+  transform: rotate(-180deg);
 }
 
 #burger.active .burger-bar-1 {
-    transform: rotate(45deg)
+  transform: rotate(45deg)
 }
 
 #burger.active .burger-bar-2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 #burger.active .burger-bar-3 {
-    transform: rotate(-45deg)
+  transform: rotate(-45deg)
+}
+
+@media only screen and (min-width: $desktop) {
+  #burger {
+    display: none;
+  }
 }
 </style>

@@ -94,4 +94,10 @@ a {
     transform-origin: center;
   }
 }
+
+@media only screen and (max-width: $desktop) {
+  .navbar {
+    display: none;
+  }
+}
 </style>
