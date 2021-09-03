@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+    <MenuNavbar />
     <div id="pageWrap">
       <Nuxt />
     </div>

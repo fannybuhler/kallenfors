@@ -27,14 +27,18 @@
 .navbar {
   font-size: 18px;
   display: flex;
-  justify-content: center;
-  padding-top: 36px;
+  justify-content: flex-end;
+  padding: 20px;
   background: $white;
 
   &__list {
     display: flex;
     list-style: none;
     z-index: 1;
+  }
+
+  &__list-item {
+    margin: 0.5rem 0;
   }
 }
 
@@ -55,7 +59,6 @@ a {
   &:visited {
     color: $black;
   }
-
 
   &:active {
     color: $black;
@@ -91,8 +94,4 @@ a {
     transform-origin: center;
   }
 }
-
 </style>
-<script>
-
-</script>
