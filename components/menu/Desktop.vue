@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar">
-    <ul class="navbar__list">
+  <div class="navbar-wrapper">
+    <ul class="navbar-wrapper__list">
       <li>
         <NuxtLink to="/">Hem</NuxtLink>
       </li>
@@ -20,11 +20,11 @@
         <NuxtLink to="/kontakt">Kontakt</NuxtLink>
       </li>
     </ul>
-  </nav>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.navbar {
+.navbar-wrapper {
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
@@ -96,7 +96,7 @@ a {
 }
 
 @media only screen and (max-width: $desktop) {
-  .navbar {
+  .navbar-wrapper {
     display: none;
   }
 }

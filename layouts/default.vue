@@ -29,6 +29,17 @@ html {
   box-sizing: border-box;
 }
 
+h3 {
+  line-height: 160%;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+  line-height: 160%;
+}
+
 body {
   background: $beige;
   box-sizing: border-box;
