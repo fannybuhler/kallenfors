@@ -50,6 +50,7 @@ button:focus {
   pointer-events: all;
   transition: transform .6s cubic-bezier(.165,.84,.44,1);
   position: relative;
+  margin: 20px 20px 0 20px;
 }
 
 .burger-bar {

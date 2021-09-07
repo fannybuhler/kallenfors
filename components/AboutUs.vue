@@ -25,7 +25,7 @@ export default {
   background: $beige;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  margin: $margin-phone;
 
   &__heading {
     font-family: 'Playfair regular';

@@ -1,7 +1,9 @@
 <template>
   <div>
+      <div class="landing-page__color-block-wrapper">
+        <div class="landing-page__color-block"></div>
+      </div>
     <div class="landing-page">
-      <div class="landing-page__color-block"></div>
       <h1 class="landing-page__heading">Peter & <br> Anna-Karin <br> Källenfors</h1>
       <img class="landing-page__image" src="~/assets/images/photos/landingpage.png" alt="corporate photo of lawyers">
       <h3 class="landing-page__subheading">Law & <br> Consulting</h3>
@@ -17,24 +19,35 @@ export default {}
 
 <style lang="scss" scoped>
 .landing-page {
+  background-color: $white; 
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $white; 
+  padding-left: 15%;
+
+  &__color-block-wrapper {
+    display: grid;
+    grid-template-columns: 19px minmax(125px, 350px) 70%;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    height: calc(100vh + 4rem);
+    max-width: 1200px;
+    margin-left: auto; 
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
 
   &__color-block {
-    height: 109.5%;
-    width: 9rem;
-    position: absolute;
+    grid-column: 2 / 3;
     background-color: $pop;
-    top: 0;
-    left: 2rem;
   }
 
   &__image {
     z-index: 1;
-    margin: 10px 50px;
+    margin-top: 10px;
     height: 256px;
     width: 256px;
     box-shadow: 0px 35px 25px -25px rgba(0, 0, 0, 0.25);
@@ -46,7 +59,7 @@ export default {}
     text-transform: uppercase;
     line-height: 100%;
     font-weight: 600;
-    margin: 0 0 5px 50px;
+    margin-bottom: 5px;
     z-index: 1;
   }
 
@@ -55,7 +68,7 @@ export default {}
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 200;
-    margin: 5px 0 0 50px;
+    margin-top: 5px;
     z-index: 1;
     padding-bottom: 70px;
 

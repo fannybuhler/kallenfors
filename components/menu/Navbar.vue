@@ -72,7 +72,6 @@ export default {
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
-  padding: 20px 20px 0 20px;
   background: $white;
 
   &__list {
