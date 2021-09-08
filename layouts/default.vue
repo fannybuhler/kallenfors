@@ -1,6 +1,7 @@
 <template>
   <div>
     <MenuNavbar />
+    <div class="landing-background"></div>
     <div id="pageWrap">
       <Nuxt />
     </div>
@@ -47,8 +48,29 @@ body {
   margin: 0;
 }
 
+.landing-background {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  z-index: -1;
+}
+
 #pageWrap {
   margin-bottom: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 950px;
+  }
+
+
+  @media only screen and (max-width: $tablet) {
+    max-width: 720px;
+  }
 }
 
 </style>

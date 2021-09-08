@@ -28,13 +28,14 @@
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 30px 20px 8px 20px;
   background: $white;
 
   &__list {
     display: flex;
     list-style: none;
     z-index: 1;
+    margin: 0;
   }
 
   &__list-item {
@@ -95,7 +96,7 @@ a {
   }
 }
 
-@media only screen and (max-width: $desktop) {
+@media only screen and (max-width: $desktop - 1px) {
   .navbar-wrapper {
     display: none;
   }

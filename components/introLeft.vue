@@ -6,13 +6,15 @@
     <div class="intro-left__span"></div>
     <p class="intro-left__body">Peter Källenfors har mångårig erfarenhet av att lämna rådgivning vid x, y  och z
        samt i bolagsrättsliga frågor. Peter arbetar även regelbundet med alla typer av 
-       kommersiella tvister och i skiljeförfaranden.</p>
+       kommersiella tvister och i skiljeförfaranden.
+    </p>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .intro-left {
-  margin-top: 2rem;
+  margin: 3rem 0;
+  padding-top: 3rem;
   position: relative;
 
   &__color-block {
@@ -20,7 +22,7 @@
     width: 90%;
     background-color: $pop;
     position: absolute;
-    top: 95px;
+    top: 115px;
     z-index: -1;
   }
 
@@ -29,6 +31,8 @@
     width: 70%;
     margin-left: 10%;
     z-index: 1;
+    max-height: 724px;
+    max-width: 550px;
   }
 
   &__heading {
