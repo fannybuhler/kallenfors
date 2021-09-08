@@ -21,6 +21,7 @@ export default {
 
   methods: {
     toggle() {
+      console.log('clicked burger')
       mutations.toggleNav()
     }
   }
@@ -51,6 +52,7 @@ button:focus {
   transition: transform .6s cubic-bezier(.165,.84,.44,1);
   position: relative;
   margin: 20px;
+  z-index: 999;
 }
 
 .burger-bar {
