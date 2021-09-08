@@ -63,11 +63,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 
-  @media only screen and (max-width: $desktop) {
-    max-width: 950px;
-  }
-
-
   @media only screen and (max-width: $tablet) {
     max-width: 720px;
   }

@@ -7,6 +7,7 @@
       <h1 class="landing-page__heading">Peter <br> & <br> Anna-Karin <br> Källenfors</h1>
       <img class="landing-page__image" src="~/assets/images/photos/landingpage-big.png" alt="corporate photo of lawyers">
       <h3 class="landing-page__subheading">Law & <br> Consulting</h3>
+      <div class="landing-page__span"></div>
     </div>
   </div>
 </template>
@@ -72,7 +73,7 @@
       content: "";
       background: black;
       position: absolute;
-      bottom: calc(100vh - 93vh);
+      bottom: calc(100vh - 92vh);
       left: 0;
       height: 1px;
       width: 70%;
@@ -80,19 +81,25 @@
     }
   }
 
+  
+
   @media only screen and (min-width: $tablet) {
     .landing-page {
       &__content-wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 1fr 35%;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-gap: 25px;
         padding-left: 0;
       }
 
       &__image {
-        grid-column: 2   / 6;
+        grid-column: 2 / 8;
         grid-row: 2 / 3;
-        width: fit-content;
+        max-width: 500px;
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
       }
 
       &__heading {
@@ -100,10 +107,7 @@
         grid-row: 2 / 3;
         align-self: center;
         margin: 0;
-
-        &__and {
-          display: block;
-        }
+        font-size: 2.2rem;
       }
 
       &__subheading {
@@ -112,6 +116,43 @@
         padding-bottom: 0;
         align-self: end;
         margin: 0;
+        margin-bottom: -8px;
+        font-size: 1.3rem;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      &__span {
+        background: black;
+        height: 1px;
+        width: 100%;
+        grid-column: 1 / 7;
+        grid-row: 3;
+        z-index: 1;
+        align-self: start;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    .landing-page {
+      &__image {
+        max-width: 620px;
+      }
+
+      &__heading {
+        font-size: 3.3rem;
+      }
+
+      &__subheading {
+        font-size: 1.5rem;
+      }
+
+      &__span {
+        margin-top: 5%;
       }
     }
   }
