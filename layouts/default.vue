@@ -5,6 +5,7 @@
     <div id="pageWrap">
       <Nuxt />
     </div>
+    <Footer />
   </div>
 </template>
 

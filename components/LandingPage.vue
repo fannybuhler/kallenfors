@@ -16,7 +16,7 @@
 .landing-page {
   &__color-block-wrapper {
     display: grid;
-    grid-template-columns: 19px minmax(125px, 350px) 70%;
+    grid-template-columns: 5% minmax(125px, 350px) 70%;
     position: absolute;
     width: 100vw;
     top: 0;

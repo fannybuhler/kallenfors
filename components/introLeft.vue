@@ -1,7 +1,9 @@
 <template>
   <div class="intro-left">
-    <div class="intro-left__color-block"></div>
-    <img class="intro-left__image" src="@/assets/images/photos/peter.jpeg" alt="Porträttfoto av Peter Källenfors avslappnat klädd">
+    <div class="intro-left__image-wrapper">
+      <div class="intro-left__color-block"></div>
+      <img class="intro-left__image" src="@/assets/images/photos/peter.jpeg" alt="Porträttfoto av Peter Källenfors avslappnat klädd">
+    </div>
     <h3 class="intro-left__heading">25 års erfarenhet av att leverera juridik på en hög kvalitativ nivå.</h3>
     <div class="intro-left__span"></div>
     <p class="intro-left__body">Peter Källenfors har mångårig erfarenhet av att lämna rådgivning vid x, y  och z
@@ -15,24 +17,33 @@
 .intro-left {
   margin: 3rem 0;
   padding-top: 3rem;
-  position: relative;
+  // position: relative;
+
+  &__image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 
   &__color-block {
-    height: 140px;
-    width: 90%;
-    background-color: $pop;
-    position: absolute;
-    top: 115px;
+    width: 85%;
+    background-color: #F8BD59;
     z-index: -1;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
   }
 
   &__image {
-    height: 70%;
+    height: auto;
     width: 70%;
-    margin-left: 10%;
+    margin-left: -12%;
     z-index: 1;
     max-height: 724px;
     max-width: 550px;
+    grid-column: 1 / 4;
+    justify-self: center;
+    align-self: center;
+    grid-row: 1 / 4;
   }
 
   &__heading {
