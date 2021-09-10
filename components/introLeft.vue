@@ -71,11 +71,27 @@
     .intro-left {
       &__image-wrapper {
         width: 50%;
-        align-self: center;
       }
 
       &__content-wrapper {
         width: 50%;
+        align-self: center;
+      }
+
+      &__color-block {
+        width: 100%;
+      }
+
+      &__heading {
+        font-size: 33px;
+      }
+
+      &__span {
+        margin-left: -15%;
+      }
+      
+      &__body {
+        font-size: 22px;
       }
     }
   }

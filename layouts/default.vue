@@ -64,10 +64,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   border: 1px dotted red;
-
-  @media only screen and (max-width: $tablet) {
-    max-width: 720px;
-  }
 }
 
 </style>

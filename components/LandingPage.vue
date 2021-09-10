@@ -20,7 +20,7 @@
     position: absolute;
     width: 100vw;
     top: 0;
-    height: calc(100vh + 4rem);
+    height: calc(100vh + 3.8rem);
     max-width: 1200px;
     margin-left: auto; 
     margin-right: auto;
@@ -85,6 +85,10 @@
 
   @media only screen and (min-width: $tablet) {
     .landing-page {
+      &__color-block-wrapper {
+        height: calc(100vh + 5.55rem);
+      }
+
       &__content-wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -139,6 +143,10 @@
 
   @media only screen and (min-width: $desktop) {
     .landing-page {
+      &__color-block-wrapper {
+        height: calc(100vh + 6.1rem);
+      }
+
       &__image {
         max-width: 620px;
       }
