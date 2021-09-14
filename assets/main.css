@@ -13,3 +13,15 @@
   font-display: swap;
   src: url('~assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
 }
+
+.arrow {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}

@@ -39,7 +39,7 @@
         <p class="footer__info-heading">Adress Sundsvall</p>
         <p class="footer__info-body">Skärsätt 118, <br> 862 95 Njurunda</p>
         <h4 class="footer__subheading">Information</h4>
-        <p class="footer__info-heading">Fakturainfo</p>
+        <p class="footer__info-heading">Fakturainfo <i class="arrow right"></i></p>
         <p class="footer__copyright">© 2021 KÄLLENFORS</p>
       </div>
     </div>
@@ -101,6 +101,7 @@ select:-webkit-autofill:focus
   color: #fff;
   padding: 20px;
   margin: 0 auto;
+  padding-bottom: 3rem;
 
   &__wrapper {
     max-width: 1200px;
@@ -158,7 +159,6 @@ select:-webkit-autofill:focus
   }
 
   @media only screen and (min-width: $tablet) {
-    
     .footer {
       &__wrapper {
         flex-direction: row-reverse;

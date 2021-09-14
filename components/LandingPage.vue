@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-page">
+  <header class="landing-page">
     <div class="landing-page__color-block-wrapper">
       <div class="landing-page__color-block"></div>
     </div>
@@ -9,7 +9,7 @@
       <h3 class="landing-page__subheading">Law & <br> Consulting</h3>
       <div class="landing-page__span"></div>
     </div>
-  </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
