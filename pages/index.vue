@@ -2,6 +2,7 @@
   <div>
     <LandingPage />
     <AboutUs />
+    <IntroLeft2 />
     <IntroLeft />
     <IntroRight />
     <Carousel />
