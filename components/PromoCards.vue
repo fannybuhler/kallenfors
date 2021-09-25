@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .promo-cards {
-  // @include boxer(red, 5px);
+  @include mainContent();
 
   &__heading {
     @include h2();
@@ -40,8 +40,13 @@ export default {
 
   &__list {
     display: grid;
-    grid-gap: 3rem 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+
+    @media only screen and (min-width: $tablet) {
+      display: grid;
+      grid-gap: 3rem 1.5rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__item {

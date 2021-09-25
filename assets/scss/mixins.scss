@@ -1,3 +1,11 @@
+// Main Content
+@mixin mainContent() {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // Box
 @mixin box($box-color: cyan, $padding: false) {
   border: 1px dotted $box-color;
