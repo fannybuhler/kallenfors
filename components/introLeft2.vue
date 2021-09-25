@@ -66,7 +66,7 @@ a {
     z-index: 1;
     position: absolute;
     left: 0;
-    top: 50% - (40% / 2);
+    top: 50% - (40% * 0.5);
     width: 95%;
     height: 40%;
     background: $pop;
