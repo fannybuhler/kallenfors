@@ -1,24 +1,24 @@
 [
   {
-    "image": "https://placehold.it/400x200",
+    "image": "photos/landingpage.png",
     "heading": "Heading 1",
     "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante.",
     "tags": ["Chefsjurist"]
   },
   {
-    "image": "https://placehold.it/400x200",
+    "image": "https://via.placeholder.com/400x200",
     "heading": "Heading 2",
     "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante.",
     "tags": ["Chefsjurist"]
   },
   {
-    "image": "https://placehold.it/400x200",
+    "image": "https://via.placeholder.com/400x200",
     "heading": "Heading 3",
     "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante.",
     "tags": ["Chefsjurist"]
   },
   {
-    "image": "https://placehold.it/400x200",
+    "image": "https://via.placeholder.com/400x200",
     "heading": "Heading 4",
     "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante.",
     "tags": ["Chefsjurist", "Advokat"]
