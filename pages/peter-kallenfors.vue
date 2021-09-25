@@ -3,14 +3,14 @@
     Peter Källenfors
     <br>
     <PromoCards
-      heading="My heading"
+      heading="Erfarenhet"
       :items="items"
     />
   </div>
 </template>
 
 <script>
-import items from '@/data/experience'
+import items from '@/data/experience-peter'
 
 export default {
   data () {
