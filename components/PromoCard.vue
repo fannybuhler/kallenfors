@@ -4,6 +4,7 @@
     <div class="promo-card__text">
       <h3 class="promo-card__heading">{{ heading }}</h3>
       <p class="promo-card__body">{{ leading }}</p>
+      <div v-for="tag, index in tags" :key="index" v-text="tag" />
     </div>
   </div>
 </template>
