@@ -1,0 +1,17 @@
+[
+  {
+    "image": "https://via.placeholder.com/64x64",
+    "heading": "Heading 1",
+    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante."
+  },
+  {
+    "image": "photos/landingpage.png",
+    "heading": "Heading 2",
+    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante."
+  },
+  {
+    "image": "https://via.placeholder.com/64x64",
+    "heading": "Heading 3",
+    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante."
+  }
+]
