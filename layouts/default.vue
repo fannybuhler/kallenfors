@@ -22,7 +22,7 @@ html {
     Montserrat,
     sans-serif;
   font-size: 16px;
-  line-height: 160%; 
+  line-height: 160%;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -31,6 +31,7 @@ html {
   box-sizing: border-box;
 }
 
+/*
 h3 {
   line-height: 160%;
   font-size: 24px;
@@ -41,6 +42,7 @@ p {
   font-size: 16px;
   line-height: 160%;
 }
+*/
 
 body {
   background: $beige;
