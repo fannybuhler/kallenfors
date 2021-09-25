@@ -1,8 +1,11 @@
 <template>
   <div class="featured-skill">
-    <img class="featured-skill__icon" :src="imageUrl" />
+    <div class="featured-skill__icon">
+      <img class="featured-skill__image" :src="imageUrl" />
+    </div>
     <div class="featured-skill__text">
       <h3 class="featured-skill__heading">{{ heading }}</h3>
+      <div class="featured-skill__span" />
       <p class="featured-skill__body">{{ leading }}</p>
     </div>
   </div>
@@ -27,3 +30,48 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.featured-skill {
+  @include box(red);
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+
+  &__icon {
+    display: block;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 1rem;
+    padding: 1.5rem;
+  }
+
+  &__image {
+    display: block;
+    max-width: 64px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__heading {
+    @include h3();
+  }
+
+  &__span {
+    background: $black;
+    color: $black;
+    height: 2px;
+    width: 25px;
+  }
+
+  &__body {
+    font-size: 12px;
+    word-break: 5;
+  }
+}
+</style>

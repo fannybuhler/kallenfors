@@ -3,7 +3,7 @@
     <LandingPage />
     <AboutUs />
     <IntroLeft2 />
-    <IntroLeft />
+    <!-- <IntroLeft /> -->
     <IntroRight />
     <Carousel />
   </div>
