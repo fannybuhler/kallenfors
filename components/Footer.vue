@@ -65,6 +65,7 @@ textarea {
   transition: border-color .3s ease-in-out;
   width: 99%;
   padding-top: 10px;
+  margin-bottom: 15px;
 }
 
 textarea {
@@ -99,9 +100,9 @@ select:-webkit-autofill:focus
 .footer {
   background: $black;
   color: #fff;
-  padding: 20px;
   margin: 0 auto;
   @include blockPadding();
+  @include mainContent();
 
   &__wrapper {
     max-width: 1200px;
@@ -133,12 +134,14 @@ select:-webkit-autofill:focus
     text-transform: uppercase;
     font-size: 20px;
     margin: 0;
+    line-height: 160%;
   }
 
   &__info-body {
     font-size: 16px;
     margin: 0;
     padding-bottom: 30px;
+    line-height: 160%;
   }
 
   &__send-form-button {

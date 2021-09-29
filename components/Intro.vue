@@ -40,6 +40,7 @@ export default {
 .intro {
   $b: &;
   @include mainContent();
+  padding-bottom: 3rem;
 
   @media only screen and (min-width: $tablet) {
     display: flex;
@@ -60,6 +61,7 @@ export default {
 
     &--image {
       width: 80%;
+      max-width: 450px;
 
       @media only screen and (min-width: $tablet) {
         width: 100%;
@@ -124,21 +126,26 @@ export default {
 
   &__overlay-heading {
     @include h2();
+    font-size: 32px;
     color: $pop;
     text-transform: none;
+    margin: 5px 0;
   }
 
   &__overlay-link {
     color: inherit;
     text-decoration: none;
+    padding: 10px;
   }
 
   &__info {
-    //
+    line-height: 160%;
   }
 
   &__heading {
     @include h3();
+    font-weight: 300;
+    line-height: 160%;
 
     &--uc {
       text-transform: uppercase;
