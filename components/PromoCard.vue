@@ -44,7 +44,7 @@ export default {
   }
 
   &__heading {
-    @include h3();
+    @include h4();
   }
 
   &__leading {
