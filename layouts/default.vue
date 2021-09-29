@@ -1,7 +1,7 @@
 <template>
   <div>
-    <MenuNavbar />
     <div class="landing-background"></div>
+    <MenuNavbar />
     <div id="pageWrap">
       <Nuxt />
     </div>
@@ -65,7 +65,6 @@ body {
   margin-bottom: 3rem;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px dotted red;
 }
 
 </style>

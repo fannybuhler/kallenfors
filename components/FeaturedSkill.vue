@@ -33,7 +33,6 @@ export default {
 
 <style lang="scss" scoped>
 .featured-skill {
-  @include box(red);
   display: flex;
   width: fit-content;
   align-items: center;

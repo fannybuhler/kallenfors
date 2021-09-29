@@ -9,15 +9,13 @@
       :phone="hero.phone"
       :mail="hero.mail"
     />
-    <br>
-    <PromoCards
-      heading="Erfarenhet"
-      :items="items"
-    />
-    <br>
     <FeaturedSkills 
       heading="Expertis"
       :skills="skills"
+    />
+    <PromoCards
+      heading="Erfarenhet"
+      :items="items"
     />
   </div>
 </template>

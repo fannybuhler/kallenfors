@@ -15,7 +15,7 @@
           <span v-for="location, index in location" :key="index" v-text="location" class="person-hero__tag"></span>
         </p>
         <p class="person-hero__leading">Telefon <span>{{ phone }}</span></p>
-        <p class="person-hero__leading">Mail <span>{{ mail }}</span></p>
+        <p class="person-hero__leading--last">Mail <span>{{ mail }}</span></p>
       </div>
     </div>
   </div>
@@ -37,6 +37,8 @@ export default {
 
 <style lang="scss" scoped>
 .person-hero {
+  min-height: calc(100vh - 70px);
+
   // @include boxer(red);
 
   // &__color-block-wrapper {
@@ -59,7 +61,6 @@ export default {
   // }
 
   &__content-wrapper {
-    @include mainContent();
     background-color: $white; 
     display: flex;
     flex-direction: column;
@@ -98,10 +99,20 @@ export default {
 
   &__leading {
     margin: .5rem;
+    
+    &--last {
+      padding-bottom: 3rem;
+    }
   }
 
   &__location {
     display: flex;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 }

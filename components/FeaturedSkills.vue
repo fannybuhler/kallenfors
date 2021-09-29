@@ -30,7 +30,6 @@ export default {
 
 <style lang="scss" scoped>
 .featured-skills {
-  @include boxer(red, 0, 2);
   @include mainContent();
 
   &__heading {

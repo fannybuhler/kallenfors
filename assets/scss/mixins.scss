@@ -6,6 +6,17 @@
   margin-right: auto;
 }
 
+@mixin blockPadding() {
+  padding: 3rem 0;
+}
+
+@mixin fullWidth() {
+  overflow-x: hidden;
+  margin: 0 -9999rem;
+  padding: 0.25rem 9999rem;
+  background: $white;
+}
+
 // Box
 @mixin box($box-color: cyan, $padding: false) {
   border: 1px dotted $box-color;
