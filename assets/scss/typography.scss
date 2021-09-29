@@ -1,9 +1,16 @@
 
 @mixin h1 {
-  color: rgba(red, 0.4);
+  font-family: 'Playfair regular';
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-weight: 400;
+  text-align: center;
+  margin: .5rem;
+  z-index: 1;
 
   @media only screen and (min-width: $tablet) {
-    color: rgba(red, 0.8);
+    font-size: 4rem;
   }
 }
 
