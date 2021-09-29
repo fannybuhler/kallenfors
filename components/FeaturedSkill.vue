@@ -65,13 +65,15 @@ export default {
   &__span {
     background: $black;
     color: $black;
-    height: 2px;
-    width: 25px;
+    height: 1px;
+    width: 30px;
+    margin: 5px 0;
   }
 
   &__body {
     font-size: 12px;
     word-break: 5;
+    line-height: 140%;
   }
 }
 </style>

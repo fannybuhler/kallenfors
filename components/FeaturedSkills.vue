@@ -45,6 +45,10 @@ export default {
     @media only screen and (min-width: $tablet) {
       display: grid;
       grid-gap: 3rem 1.5rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (min-width: $desktop) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
