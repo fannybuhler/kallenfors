@@ -21,7 +21,6 @@
       :skills="skills"
     />
     <IntroRight />
-    <Carousel />
   </div>
 </template>
 
