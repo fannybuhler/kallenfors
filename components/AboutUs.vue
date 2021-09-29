@@ -17,14 +17,13 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  background: $beige;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin: 20px 5% 20px 5%;
+  @include blockPadding();
+  @include mainContent();
 
   &__heading {
     font-family: 'Playfair regular';
     font-size: 32px;
+    line-height: 160%;
     font-weight: 300;
     position: relative;
   }
@@ -44,14 +43,6 @@ export default {
         margin-right: 20%;
         font-size: 24px;
       }
-    }
-  }
-
-  @media only screen and (min-width: $desktop) {
-    .about {
-      &__heading {
-        font-size: 52px;
-      } 
     }
   }
 }

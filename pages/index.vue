@@ -2,7 +2,6 @@
   <div>
     <LandingPage />
     <AboutUs />
-    <IntroLeft />
     <Intro
       modifier="image-left"
       :link="introPeter.link"
@@ -14,27 +13,25 @@
     />
     <Intro
       modifier="image-right"
+      :link="introAk.link"
+      :alt="introAk.alt"
+      :name="introAk.name"
+      :image="introAk.image"
+      :heading="introAk.heading"
+      :description="introAk.description"
     />
-    <IntroLeft2 />
-    <FeaturedSkills
-      heading="Expertis"
-      :skills="skills"
-    />
-    <IntroRight />
   </div>
 </template>
 
 <script>
-import items from '@/data/experience-peter'
-import skills from '@/data/featured-skills-peter'
 import introPeter from '@/data/intro-peter'
+import introAk from '@/data/intro-ak'
 
 export default {
   data () {
     return {
-      items,
-      skills,
-      introPeter
+      introPeter,
+      introAk
     }
   }
 }

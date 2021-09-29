@@ -3,9 +3,7 @@
     <div class="intro__column intro__column--image">
       <div class="intro__color"></div>
       <div class="intro__media">
-        <!--
-        <img class="intro__image" :src="require(`@/assets/images/${image}`)" :alt="alt" />
-        -->
+        <img class="intro__image" v-if="image" :src="require(`@/assets/images/${image}`)" :alt="alt" />
         <div class="intro__overlay" v-if="name">
           <h3 class="intro__overlay-heading" v-html="name" />
           <NuxtLink class="intro__overlay-link" :to="link" v-if="link">

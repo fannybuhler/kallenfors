@@ -76,6 +76,10 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (min-width: $tablet) {
+      max-width: 50%;
+    }
   }
 
   &__heading {
