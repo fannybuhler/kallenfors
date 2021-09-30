@@ -22,6 +22,7 @@
       :heading="introAk.heading"
       :description="introAk.description"
     />
+    <Carousel />
   </div>
 </template>
 
