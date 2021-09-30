@@ -14,7 +14,6 @@
 
 <style lang="scss" scoped>
 .landing-page {
-
   &__color-block-wrapper {
     display: grid;
     grid-template-columns: 5% minmax(125px, 350px) 70%;

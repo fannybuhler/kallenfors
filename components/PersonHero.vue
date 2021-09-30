@@ -9,13 +9,18 @@
       </div>
       <div class="person-hero__content">
         <h1 class="person-hero__heading">{{ heading }}</h1>
-        <p class="person-hero__leading">{{ role }}</p>
+        <p class="person-hero__leading person-hero__leading--bold">{{ role }}</p>
         <p class="person-hero__leading person-hero__location">
           <img class="person-hero__icon" src="@/assets/images/icons/map-pin.png" alt="map pin incon" />
           <span v-for="location, index in location" :key="index" v-text="location" class="person-hero__tag"></span>
         </p>
-        <p class="person-hero__leading">Telefon <span>{{ phone }}</span></p>
-        <p class="person-hero__leading--last">Mail <span>{{ mail }}</span></p>
+        <div class="person-hero__span"></div>
+        <div class="person-hero__contact">
+          <span class="person-hero__leading">Telefon</span>
+          <span class="person-hero__leading">{{ phone }}</span>
+          <span class="person-hero__leading person-hero__leading--last">Mail</span>
+          <span class="person-hero__leading">{{ mail }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -39,26 +44,33 @@ export default {
 .person-hero {
   min-height: calc(100vh - 70px);
 
-  // @include boxer(red);
+  &__color-block-wrapper {
+    display: none;
+    grid-template-columns: 5% minmax(125px, 350px) 70%;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    height: calc(100vh + 4.8rem);
+    max-width: 1200px;
+    margin-left: auto; 
+    margin-right: auto;
+    left: 0;
+    right: 0;
 
-  // &__color-block-wrapper {
-  //   display: grid;
-  //   grid-template-columns: 5% minmax(125px, 350px) 70%;
-  //   position: absolute;
-  //   width: 100vw;
-  //   top: 0;
-  //   height: calc(100vh + 3.8rem);
-  //   max-width: 1200px;
-  //   margin-left: auto; 
-  //   margin-right: auto;
-  //   left: 0;
-  //   right: 0;
-  // }
+    @media only screen and (min-width: $desktop) {
+      display: grid;
+    }
+  }
 
-  // &__color-block {
-  //   grid-column: 2 / 3;
-  //   background-color: $pop;
-  // }
+  &__color-block {
+    grid-column: 2 / 3;
+    background-color: $pop;
+    display: none;
+
+    @media only screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
 
   &__content-wrapper {
     background-color: $white; 
@@ -84,6 +96,15 @@ export default {
 
   &__heading {
     @include h1();
+    margin: 1rem;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 3.5rem
+    }
+  }
+
+  &__media {
+    z-index: 2;
   }
 
   &__image {
@@ -97,22 +118,47 @@ export default {
     width: 20px;
   }
 
-  &__tag {
-    margin: 0 3px;
-  }
-
-  &__leading {
-    margin: .5rem;
-    
-    &--last {
-      padding-bottom: 3rem;
-    }
-  }
-
   &__location {
     display: flex;
     align-items: center;
   }
+
+  &__tag {
+    margin: 0 3px;
+  }
+
+  &__span {
+    background: black;
+    height: 1px;
+    width: 50%;
+    z-index: 1;
+    margin-bottom: 1rem;
+
+    @media only screen and (min-width: $desktop) {
+      width: 180%;
+      margin-left: -122%;
+    }
+  }
+
+  &__contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+  }
+
+  &__leading {
+    margin: 0 .5rem 1rem .5rem;
+    
+    &--last {
+      padding-bottom: 3rem;
+    }
+    
+    &__bold {
+      font-weight: 600;
+    }
+  }
+
 
   @media only screen and (min-width: $tablet) {
     display: flex;

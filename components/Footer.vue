@@ -101,8 +101,7 @@ select:-webkit-autofill:focus
   background: $black;
   color: #fff;
   margin: 0 auto;
-  @include blockPadding();
-  @include mainContent();
+  padding: 3rem 5%;
 
   &__wrapper {
     max-width: 1200px;
