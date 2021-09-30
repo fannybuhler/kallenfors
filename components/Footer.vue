@@ -115,6 +115,8 @@ select:-webkit-autofill:focus
     font-family: 'Playfair regular';
     font-size: 3rem;
     margin: 25px 0 15px 0;
+    height: 50px;
+    line-height: 130%;
   }
 
   &__form {
@@ -127,6 +129,8 @@ select:-webkit-autofill:focus
     font-size: 2.5rem;
     font-weight: 300;
     margin: 25px 0 15px 0;
+    height: 50px;
+    line-height: 173%;
   }
 
   &__info-heading {

@@ -135,8 +135,8 @@ export default {
     margin-bottom: 1rem;
 
     @media only screen and (min-width: $desktop) {
-      width: 180%;
-      margin-left: -122%;
+      width: 190%;
+      margin-left: -135%;
     }
   }
 

@@ -4,10 +4,11 @@
       <div class="intro__color"></div>
       <div class="intro__media">
         <img class="intro__image" v-if="image" :src="require(`@/assets/images/${image}`)" :alt="alt" />
-        <div class="intro__overlay" v-if="name">
-          <h3 class="intro__overlay-heading" v-html="name" />
+        <div class="intro__overlay" v-if="firstName">
+          <h3 class="intro__overlay-heading" v-html="firstName" />
+          <h3 class="intro__overlay-heading" v-html="lastName" />
           <NuxtLink class="intro__overlay-link" :to="link" v-if="link">
-            Läs mer om {{ name }} <i class="arrow right"></i>
+            Läs mer om {{ firstName }}s arbete <i class="arrow right"></i>
           </NuxtLink>
         </div>
       </div>
@@ -28,7 +29,8 @@ export default {
     modifier: String,
     link: String,
     alt: String,
-    name: String,
+    firstName: String,
+    lastName: String,
     image: String,
     heading: String,
     description: String
@@ -65,6 +67,7 @@ export default {
 
       @media only screen and (min-width: $tablet) {
         width: 100%;
+        max-width: none;
       }
     }
   }

@@ -30,7 +30,7 @@ export default {
     '~assets/scss/typography.scss',
     '~assets/scss/breakpoints.scss',
     '~assets/scss/colors.scss',
-    '~assets/scss/mixins.scss'
+    '~assets/scss/mixins.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
