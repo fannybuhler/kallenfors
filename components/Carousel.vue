@@ -1,19 +1,14 @@
 <template>
-  <swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide v-for="item, index in carousel" :key="index">
-      {{ index }}
+  <swiper class="carousel-card" ref="mySwiper" :options="swiperOptions">
+    <swiper-slide v-for="slides, index in carousel" :key="index">
       <CarouselSlide 
-        :image="item.image"
-        :alt="item.alt"
-        :heading="item.heading"
-        :leading="item.leading"
-        :link="item.link"
+        :image="slides.image"
+        :alt="slides.alt"
+        :heading="slides.heading"
+        :leading="slides.leading"
+        :link="slides.link"
       />
     </swiper-slide>
-    <!-- <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide> -->
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
 </template>
@@ -61,7 +56,6 @@ export default {
 
 <style lang="scss" scoped>
 .carousel-card {
-  @include box(red);
-  padding: 12rem 0;
+  //
 }
 </style>

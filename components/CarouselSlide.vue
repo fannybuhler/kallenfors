@@ -1,14 +1,16 @@
 <template>
   <div class="carousel">
     <div class="carousel__media">
-      <!-- <img class="carousel__image" :src="imageUrl" :alt="alt"> -->
+      <img class="carousel__image" :src="imageUrl" :alt="alt">
     </div>
     <div class="carousel__content">
-      <h3 class="carousel__heading">Heading: {{ heading }}</h3>
-      <p class="carousel__leading">Leading: {{ leading }}</p>
-      <button class="carousel__button">
-        <NuxtLink to="link">Läs mer</NuxtLink>
-      </button>
+      <div class="carousel__text">
+        <h3 class="carousel__heading">{{ heading }}</h3>
+        <p class="carousel__leading">{{ leading }}</p>
+        <button class="carousel__button">
+          <NuxtLink to="link">Läs mer</NuxtLink>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -38,16 +40,77 @@ export default {
 <style lang="scss" scoped>
 .carousel {
   @include box(red);
+  position: relative;
+
+  &__media {
+    //
+  }
+
+  &__image {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: absolute;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__text {
+    width: 90%;
+
+    @media only screen and (min-width: $tablet) {
+      width: 50%;
+    }
+  }
+
+  &__heading {
+    @include h2();
+    text-transform: none;
+  }
+
+  &__leading {
+    font-size: 12px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
+  }
 
   &__button {
     background: $pop;
     border: none;
     width: fit-content;
-    padding: 10px 15px;
+    padding: 8px 12px;
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     color: #000;
+    margin: 10px 0;
+
+    @media only screen and (min-width: $tablet) {
+      padding: 10px 15px;
+      letter-spacing: 4px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 10px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
   }
 }
 </style>
