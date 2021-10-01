@@ -22,19 +22,23 @@
       :heading="introAk.heading"
       :description="introAk.description"
     />
-    <Carousel />
+    <Carousel 
+      :carousel="carousel"
+    />
   </div>
 </template>
 
 <script>
 import introPeter from '@/data/intro-peter'
 import introAk from '@/data/intro-ak'
+import carousel from '@/data/carousel'
 
 export default {
   data () {
     return {
       introPeter,
-      introAk
+      introAk,
+      carousel
     }
   }
 }

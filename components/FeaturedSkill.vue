@@ -1,7 +1,7 @@
 <template>
   <div class="featured-skill">
     <div class="featured-skill__icon">
-      <img class="featured-skill__image" :src="imageUrl" />
+      <img class="featured-skill__image" :src="imageUrl" alt="icon"/>
     </div>
     <div class="featured-skill__text">
       <h3 class="featured-skill__heading">{{ heading }}</h3>
