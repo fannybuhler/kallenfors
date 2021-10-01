@@ -1,13 +1,13 @@
 <template>
   <swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide v-for="slides, index in carousel" :key="index">
+    <swiper-slide v-for="item, index in carousel" :key="index">
       {{ index }}
       <CarouselSlide 
-        :image="carousel.image"
-        :alt="carousel.alt"
-        :heading="carousel.heading"
-        :leading="carousel.leading"
-        :link="carousel.link"
+        :image="item.image"
+        :alt="item.alt"
+        :heading="item.heading"
+        :leading="item.leading"
+        :link="item.link"
       />
     </swiper-slide>
     <!-- <swiper-slide>Slide 2</swiper-slide>
@@ -29,6 +29,10 @@ export default {
       type: Array,
       default: () => []
     }
+  },
+
+  mounted() {
+    console.log("carousel:", this.$props.carousel)
   },
 
   data() {
