@@ -1,6 +1,7 @@
 <template>
   <nav class="navbar">
     <!-- Not the best solution using mediaqueries in each component to determine mobile or desktop navigation-->
+    <MenuLogo />
     <MenuBurger />
     <MenuSidebar>
       <ul class="navbar__list">

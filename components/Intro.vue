@@ -8,7 +8,7 @@
           <h3 class="intro__overlay-heading" v-html="firstName" />
           <h3 class="intro__overlay-heading" v-html="lastName" />
           <NuxtLink class="intro__overlay-link" :to="link" v-if="link">
-            Läs mer om {{ firstName }}s arbete <i class="arrow right"></i>
+            Mer om {{ firstName }} <i class="arrow right"></i>
           </NuxtLink>
         </div>
       </div>
@@ -62,12 +62,28 @@ export default {
     position: relative;
 
     &--image {
-      width: 80%;
+      // width: 80%;
       max-width: 450px;
+      
+      #{$b}--image-left & {
+        padding-right: 20%;
+      }
+
+      #{$b}--image-right & {
+        padding-left: 20%;
+      }
 
       @media only screen and (min-width: $tablet) {
         width: 100%;
         max-width: none;
+        
+        #{$b}--image-left & {
+          padding-right: 0;
+        }
+
+        #{$b}--image-right & {
+          padding-left: 0;
+        }
       }
     }
   }
@@ -78,7 +94,7 @@ export default {
     background: $pop;
     top: 35%;
     height: 30%;
-    width: 120%;
+    width: 100%;
 
     #{$b}--image-left & {
       left: -11.25%;

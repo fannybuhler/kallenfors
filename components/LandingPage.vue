@@ -98,7 +98,7 @@
       }
 
       &__image {
-        grid-column: 2 / 8;
+        grid-column: 2 / 7;
         grid-row: 2 / 3;
         max-width: 500px;
         object-fit: cover;
@@ -107,7 +107,7 @@
       }
 
       &__heading {
-        grid-column: 8 / 12;
+        grid-column: 7 / 12;
         grid-row: 2 / 3;
         align-self: center;
         margin: 0;
@@ -115,7 +115,7 @@
       }
 
       &__subheading {
-        grid-column: 8 / 12;
+        grid-column: 7 / 12;
         grid-row: 2 / 3;
         padding-bottom: 0;
         align-self: end;
@@ -132,7 +132,7 @@
         background: black;
         height: 1px;
         width: 100%;
-        grid-column: 1 / 7;
+        grid-column: 1 / 8;
         grid-row: 3;
         z-index: 1;
         align-self: start;
@@ -143,9 +143,9 @@
 
   @media only screen and (min-width: $desktop) {
     .landing-page {
-      &__image {
-        max-width: 620px;
-      }
+      // &__image {
+      //   max-width: 620px;
+      // }
 
       &__heading {
         font-size: 3.3rem;

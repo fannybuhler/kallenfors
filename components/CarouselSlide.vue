@@ -8,7 +8,7 @@
         <h3 class="carousel__heading">{{ heading }}</h3>
         <p class="carousel__leading">{{ leading }}</p>
         <button class="carousel__button">
-          <NuxtLink to="link">Läs mer</NuxtLink>
+          <NuxtLink :to="link">Läs mer</NuxtLink>
         </button>
       </div>
     </div>
@@ -50,6 +50,7 @@ export default {
     width: 100%;
     max-height: 80vh;
     object-fit: cover;
+    display: block;
   }
 
   &__content {
