@@ -134,10 +134,10 @@ export default {
     z-index: 1;
     margin-bottom: 1rem;
 
-    @media only screen and (min-width: $desktop) {
-      width: 150%;
-      margin-left: -120%;
-    }
+    // @media only screen and (min-width: $desktop) {
+    //   width: 150%;
+    //   margin-left: -120%;
+    // }
   }
 
   &__contact {

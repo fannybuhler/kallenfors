@@ -92,16 +92,21 @@ export default {
     @media only screen and (min-width: $tablet) {
       max-width: 50%;
       align-items: flex-start;
-      padding-left: 2rem;
     }
   }
 
   &__heading {
     @include h1();
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 2rem;
 
     @media only screen and (min-width: $tablet) {
-      font-size: 3.5rem
+      font-size: 2rem;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 3rem;
     }
   }
 
