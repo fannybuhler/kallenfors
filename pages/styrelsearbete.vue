@@ -1,9 +1,23 @@
 <template>
   <div>
-    <h1>Styrelsearbete</h1>
+    <SubpageHero 
+      :color="hero.color"
+      :image="hero.image"
+      :alt="hero.alt"
+      :heading="hero.heading"
+      :description="hero.description"
+    />
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import hero from '@/data/styrelsearbete-hero'
 
-</style>
+export default {
+  data () {
+    return {
+      hero
+    }
+  }
+}
+</script>

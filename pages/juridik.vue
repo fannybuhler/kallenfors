@@ -1,6 +1,7 @@
 <template>
   <div>
     <SubpageHero 
+      :color="hero.color"
       :image="hero.image"
       :alt="hero.alt"
       :heading="hero.heading"

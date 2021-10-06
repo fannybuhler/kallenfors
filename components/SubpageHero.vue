@@ -1,7 +1,7 @@
 <template>
   <div class="subpage-hero">
     <div class="subpage-hero__color-block-wrapper">
-      <div class="subpage-hero__color-block"></div>
+      <div class="subpage-hero__color-block" :style="{ 'background-color': color }"></div>
     </div>
     <div class="subpage-hero__content-wrapper">
       <div class="subpage-hero__media">
@@ -19,6 +19,7 @@
 <script>
 export default {
   props: {
+    color: String,
     image: String,
     alt: String,
     heading: String,
