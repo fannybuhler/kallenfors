@@ -12,11 +12,16 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-  width: 100px;
-  float: left;
+  position: absolute;
+  align-self: center;
+  z-index: 2;
+  left: 10px;
+  padding-top: 30px;
+  width: 200px;
 
   &__image {
-    width: 100px;
+    width: 80%;
+    max-width: 160px;
   }
 }
 

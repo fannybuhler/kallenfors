@@ -101,7 +101,9 @@ a:hover {
 
 @media only screen and (min-width: $desktop) {
   .navbar {
-    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
   }
 }
 </style>

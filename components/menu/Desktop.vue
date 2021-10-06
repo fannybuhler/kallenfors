@@ -28,7 +28,7 @@
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
-  padding: 30px 20px 8px 20px;
+  padding: 30px 0 8px 0;
   background: $white;
 
   &__list {
@@ -45,7 +45,7 @@
 
 a {
   text-decoration: none;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   display: block;
   position: relative;
   padding: 0.2em 0;

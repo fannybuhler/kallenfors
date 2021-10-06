@@ -56,7 +56,7 @@
     z-index: 1;
     margin-top: 10px;
     width: 70%;
-    max-width: 350px;
+    max-width: 300px;
     box-shadow: 0px 35px 25px -25px rgba(0, 0, 0, 0.25);
   }
 
@@ -100,7 +100,7 @@
       &__image {
         grid-column: 2 / 7;
         grid-row: 2 / 3;
-        max-width: 500px;
+        max-width: 450px;
         object-fit: cover;
         width: 100%;
         max-height: 100%;
