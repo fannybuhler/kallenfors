@@ -39,7 +39,6 @@ export default {
 
 <style lang="scss" scoped>
 .carousel {
-  @include box(red);
   position: relative;
 
   &__media {

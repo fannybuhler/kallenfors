@@ -1,5 +1,22 @@
 <template>
   <div>
-    <h1>Juridik</h1>
+    <SubpageHero 
+      :image="hero.image"
+      :alt="hero.alt"
+      :heading="hero.heading"
+      :description="hero.description"
+    />
   </div>
 </template>
+
+<script>
+import hero from '@/data/juridik-hero'
+
+export default {
+  data () {
+    return {
+      hero
+    }
+  }
+}
+</script>

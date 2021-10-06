@@ -120,8 +120,7 @@
         padding-bottom: 0;
         align-self: end;
         margin: 0;
-        margin-bottom: -8px;
-        font-size: 1.3rem;
+        margin-bottom: -5px;
 
         &:after {
           display: none;

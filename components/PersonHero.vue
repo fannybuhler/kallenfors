@@ -16,9 +16,9 @@
         </p>
         <div class="person-hero__span"></div>
         <div class="person-hero__contact">
-          <span class="person-hero__leading">Telefon</span>
+          <span class="person-hero__leading person-hero__leading--fade">Telefon</span>
           <span class="person-hero__leading">{{ phone }}</span>
-          <span class="person-hero__leading person-hero__leading--last">Mail</span>
+          <span class="person-hero__leading person-hero__leading--last person-hero__leading--fade">Mail</span>
           <span class="person-hero__leading">{{ mail }}</span>
         </div>
       </div>
@@ -110,7 +110,7 @@ export default {
   &__image {
     z-index: 1;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
   }
   
   &__icon {
@@ -135,16 +135,20 @@ export default {
     margin-bottom: 1rem;
 
     @media only screen and (min-width: $desktop) {
-      width: 190%;
-      margin-left: -135%;
+      width: 150%;
+      margin-left: -120%;
     }
   }
 
   &__contact {
     display: grid;
+    grid-column-gap: 1rem;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
 
+    @media only screen and (min-width: $tablet) {
+      grid-column-gap: 2.5rem;
+    }
   }
 
   &__leading {
@@ -154,8 +158,12 @@ export default {
       padding-bottom: 3rem;
     }
     
-    &__bold {
+    &--bold {
       font-weight: 600;
+    }
+
+    &--fade {
+      color: #696969;
     }
   }
 

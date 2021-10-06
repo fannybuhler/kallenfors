@@ -31,3 +31,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+.swiper-pagination-bullet-active {
+  background: #F8BD59!important;
+}

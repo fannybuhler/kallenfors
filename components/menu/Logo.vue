@@ -1,6 +1,8 @@
 <template>
   <div class="logo">
-    <img class="logo__image" src="@/assets/images/icons/kallenfors-logo.png" alt="Källenfors logotype">
+    <NuxtLink to="/">
+      <img class="logo__image" src="@/assets/images/icons/kallenfors-logo.png" alt="Källenfors logotype">
+    </NuxtLink>
   </div>
 </template>
 
@@ -16,8 +18,12 @@ export default {
   align-self: center;
   z-index: 2;
   left: 10px;
-  padding-top: 30px;
+  padding-top: 4px;
   width: 200px;
+
+  @media only screen and (min-width: $desktop) {
+    padding-top: 24px;
+  }
 
   &__image {
     width: 80%;
