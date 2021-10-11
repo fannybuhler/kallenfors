@@ -1,10 +1,8 @@
 <template>
   <div class="about">
     <h3 class="about__heading">VÅRT ARBETE</h3>
-    <p class="about__body">Vi önskar få en nära relation till våra kunder. 
-      Detta gynnar både vårt arbete och kundens möjlighet att få snabb och kostnadseffektiv hjälp, 
-      eftersom vi känner varandra. Ingen startsträcka. Vi åtar oss att granska alla kommersiella 
-      relationer som kundens bolag har ur ett legalt riskperspektiv – vilka relationer det än är. 
+    <p class="about__body">
+      Källenfors Law & Consulting AB är ett konsultbolag som ägs och drivs av Peter och Anna-Karin Källenfors. Bolaget tillhandahåller tjänster inom juridik, marknadsföring och managementfrågor. Bolaget verkar i både Stockholm och Sundsvall.
     </p>
   </div>
 </template>
