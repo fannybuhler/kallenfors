@@ -43,12 +43,20 @@ export default {
     border: 1px solid black;
     border-radius: 50%;
     margin-right: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
+
+    @media only screen and (min-width: $desktop) {
+      padding: 1.5rem;
+    }
   }
 
   &__image {
     display: block;
-    max-width: 64px;
+    max-width: 48px;
+
+    @media only screen and (min-width: $desktop) {
+      max-width: 64px;
+    }
   }
 
   &__text {

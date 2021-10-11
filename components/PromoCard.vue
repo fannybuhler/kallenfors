@@ -57,10 +57,11 @@ export default {
 
   &__tag {
     font-size: 14px;
-    padding: 0.5rem 1rem;
-    background: rgba(#000, 0.1);
-    margin: 0.5rem 0.5rem 0 0;
-    border-radius: 0.5rem;
+    color: #696969;
+    // padding: 0.5rem 1rem;
+    // background: rgba(#000, 0.1);
+    // margin: 0.5rem 0.5rem 0 0;
+    // border-radius: 0.5rem;
   }
 }
 </style>

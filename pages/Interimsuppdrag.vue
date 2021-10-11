@@ -7,16 +7,22 @@
       :heading="hero.heading"
       :description="hero.description"
     />
+    <PromoCards
+      heading="Erfarenhet"
+      :items="items"
+    />
   </div>
 </template>
 
 <script>
 import hero from '@/data/interimsuppdrag-hero'
+import items from '@/data/experience-interim'
 
 export default {
   data () {
     return {
-      hero
+      hero,
+      items
     }
   }
 }

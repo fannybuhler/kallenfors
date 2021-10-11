@@ -1,20 +1,32 @@
 [
   {
     "image": "https://via.placeholder.com/400x300",
-    "heading": "Heading 1",
-    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante.",
-    "tags": ["Chefsjurist"]
+    "heading": "Molin Bil",
+    "leading": "",
+    "tags": ["Marknadschef"]
   },
   {
     "image": "https://via.placeholder.com/400x300",
-    "heading": "Heading 2",
-    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante.",
-    "tags": ["Chefsjurist"]
+    "heading": "Life Hälsokostkedja",
+    "leading": "",
+    "tags": ["Nordisk produktchef", "Marknadsfrågor"]
   },
   {
     "image": "https://via.placeholder.com/400x300",
-    "heading": "Heading 3",
-    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante.",
-    "tags": ["Chefsjurist", "Advokat"]
+    "heading": "Adecco",
+    "leading": "",
+    "tags": ["Rekryterare"]
+  },
+  {
+    "image": "https://via.placeholder.com/400x300",
+    "heading": "Kontorsfixarna",
+    "leading": "",
+    "tags": ["Rekryterare"]
+  },
+  {
+    "image": "https://via.placeholder.com/400x300",
+    "heading": "Data Power",
+    "leading": "",
+    "tags": ["Informationsansvarig", "Marknadsansvarig"]
   }
 ]
