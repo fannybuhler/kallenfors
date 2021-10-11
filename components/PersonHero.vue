@@ -6,6 +6,7 @@
     <div class="person-hero__content-wrapper">
       <div class="person-hero__media">
         <img class="person-hero__image" v-if="image" :src="require(`@/assets/images/${image}`)" :alt="alt">
+        <div class="person-hero__overlay"></div>
       </div>
       <div class="person-hero__content">
         <h1 class="person-hero__heading">{{ heading }}</h1>
@@ -104,13 +105,23 @@ export default {
   }
 
   &__media {
-    z-index: 2;
+    position: relative;
   }
 
   &__image {
-    z-index: 1;
     width: 100%;
     max-width: 400px;
+  }
+
+  &__overlay {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 98.5%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 24.85%, rgba(0, 0, 0, 0) 75.42%, rgba(0, 0, 0, 0.4) 100%);
   }
   
   &__icon {
