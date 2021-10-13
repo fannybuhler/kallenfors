@@ -16,9 +16,6 @@
       <li>
         <NuxtLink to="/interimsuppdrag">Interimsuppdrag</NuxtLink>
       </li>
-      <li>
-        <NuxtLink to="/kontakt">Kontakt</NuxtLink>
-      </li>
     </ul>
   </div>
 </template>

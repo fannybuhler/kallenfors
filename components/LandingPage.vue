@@ -56,7 +56,6 @@
     z-index: 1;
     margin-top: 10px;
     width: 70%;
-    max-width: 300px;
     box-shadow: 0px 35px 25px -25px rgba(0, 0, 0, 0.25);
   }
 
@@ -98,16 +97,16 @@
       }
 
       &__image {
-        grid-column: 2 / 7;
+        grid-column: 2 / 8;
         grid-row: 2 / 3;
-        max-width: 450px;
         object-fit: cover;
         width: 100%;
         max-height: 100%;
+        align-self: end;
       }
 
       &__heading {
-        grid-column: 7 / 12;
+        grid-column: 8 / 12;
         grid-row: 2 / 3;
         align-self: center;
         margin: 0;
@@ -115,7 +114,7 @@
       }
 
       &__subheading {
-        grid-column: 7 / 12;
+        grid-column: 8 / 12;
         grid-row: 2 / 3;
         padding-bottom: 0;
         align-self: end;

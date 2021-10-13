@@ -118,8 +118,7 @@ export default {
 
   &__image {
     z-index: 1;
-    width: 80%;
-    max-width: 400px;
+    margin-right: 2rem;
   }
 
   &__span {
