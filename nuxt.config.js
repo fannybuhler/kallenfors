@@ -64,4 +64,9 @@ export default {
   styleResources: {
     scss: ['./assets/scss/*.scss']
   },
+
+  // Router config
+  router: {
+    base: '/kallenfors/'
+  },
 }
