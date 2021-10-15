@@ -48,6 +48,7 @@ export default {
   &__image {
     width: 100%;
     max-height: 80vh;
+    min-height: 50vh;
     object-fit: cover;
     display: block;
   }

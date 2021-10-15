@@ -43,6 +43,7 @@ export default {
   $b: &;
   @include mainContent();
   padding-bottom: 3rem;
+  overflow: hidden;
 
   @media only screen and (min-width: $tablet) {
     display: flex;

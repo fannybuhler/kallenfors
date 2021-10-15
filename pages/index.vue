@@ -22,6 +22,11 @@
       :heading="introAk.heading"
       :description="introAk.description"
     />
+    <div class="carousel">
+      <p class="carousel__leading">Gedigen erfarenhet</p>
+      <h3 class="carousel__heading">Tidigare uppdrag</h3>
+      <div class="carousel__color-block"></div>
+    </div>
     <Carousel 
       :carousel="carousel"
     />
@@ -43,3 +48,43 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.carousel {
+  @include mainContent();
+
+  position: relative;
+
+  &__heading {
+    font-family: 'Playfair regular';
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 48px;
+    }
+  }
+
+  &__leading {
+    text-transform: uppercase;
+  }
+
+  &__color-block {
+    height: 40%;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $pop;
+
+    @media only screen and (min-width: $desktop) {
+      width: 50%;
+    }
+  }
+}
+</style>

@@ -22,7 +22,7 @@ export default {
     font-family: 'Playfair regular';
     font-size: 32px;
     line-height: 160%;
-    font-weight: 300;
+    font-weight: 400;
     position: relative;
   }
 
