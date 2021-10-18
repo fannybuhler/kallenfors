@@ -7,6 +7,8 @@
         :heading="slides.heading"
         :leading="slides.leading"
         :link="slides.link"
+        :name="slides.name"
+        :dark="slides.dark"
       />
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
@@ -55,7 +57,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.carousel-card {
-  //
-}
+
 </style>

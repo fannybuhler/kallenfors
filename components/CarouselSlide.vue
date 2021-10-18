@@ -3,12 +3,12 @@
     <div class="carousel__media">
       <img class="carousel__image" :src="imageUrl" :alt="alt">
     </div>
-    <div class="carousel__content">
+    <div class="carousel__content" :class="dark ? 'dark' : ''">
       <div class="carousel__text">
         <h3 class="carousel__heading">{{ heading }}</h3>
         <p class="carousel__leading">{{ leading }}</p>
         <button class="carousel__button">
-          <NuxtLink :to="link">Läs mer</NuxtLink>
+          <NuxtLink :to="link">{{ name }}s arbete</NuxtLink>
         </button>
       </div>
     </div>
@@ -23,6 +23,8 @@ export default {
     heading: String,
     leading: String,
     link: String,
+    name: String,
+    dark: Boolean
   },
 
   computed: {
@@ -40,10 +42,6 @@ export default {
 <style lang="scss" scoped>
 .carousel {
   position: relative;
-
-  &__media {
-    //
-  }
 
   &__image {
     width: 100%;
@@ -63,27 +61,35 @@ export default {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+  }
+
+  .dark {
+    color: #000;
   }
 
   &__text {
     width: 90%;
 
     @media only screen and (min-width: $tablet) {
-      width: 50%;
+      width: 40%;
     }
   }
 
   &__heading {
     @include h2();
     text-transform: none;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   }
 
   &__leading {
     font-size: 12px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    margin-bottom: 15px;
 
     @media only screen and (min-width: $tablet) {
       font-size: 16px;
+      line-height: 160%;
     }
   }
 
@@ -97,6 +103,11 @@ export default {
     letter-spacing: 2px;
     color: #000;
     margin: 10px 0;
+    transition: 0.3s;
+
+    &:hover {
+      background: $darkpop;
+    }
 
     @media only screen and (min-width: $tablet) {
       padding: 10px 15px;

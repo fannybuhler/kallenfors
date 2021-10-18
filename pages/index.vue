@@ -27,9 +27,11 @@
       <h3 class="carousel__heading">Tidigare uppdrag</h3>
       <div class="carousel__color-block"></div>
     </div>
-    <Carousel 
-      :carousel="carousel"
-    />
+    <div class="slides">
+      <Carousel 
+        :carousel="carousel"
+      />
+    </div>
   </div>
 </template>
 
@@ -50,9 +52,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.slides {
+  max-width: none !important;
+  width: 100vw !important;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
 .carousel {
   @include mainContent();
-
   position: relative;
 
   &__heading {
