@@ -21,7 +21,6 @@ export default {
 
   methods: {
     toggle() {
-      console.log('clicked burger')
       mutations.toggleNav()
     }
   }

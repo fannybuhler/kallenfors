@@ -1,6 +1,7 @@
 <template>
   <div class="promo-cards">
     <h2 v-if="heading" class="promo-cards__heading" v-text="heading" />
+    <div class="promo-cards__span"></div>
     <div class="promo-cards__list">
       <div v-for="item, index in items" :key="index" class="promo-cards__item">
         <PromoCard
@@ -36,7 +37,7 @@ export default {
 
   &__heading {
     @include h2();
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
   }
 
   &__list {
@@ -50,8 +51,20 @@ export default {
     }
   }
 
-  &__item {
-    //
+  &__span {
+    background: black;
+    height: 1px;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    left: -5%;
+
+    @media only screen and (min-width: $tablet) {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      width: 50%;
+    }
   }
 }
 </style>

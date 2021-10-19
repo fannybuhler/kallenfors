@@ -20,7 +20,8 @@
     position: absolute;
     width: 100vw;
     top: 0;
-    height: calc(100vh + 4.8rem);
+    // height: calc(100vh + 4.8rem);
+    height: 100vh;
     max-width: 1200px;
     margin-left: auto; 
     margin-right: auto;
@@ -84,9 +85,9 @@
 
   @media only screen and (min-width: $tablet) {
     .landing-page {
-      &__color-block-wrapper {
-        height: calc(100vh + 5.55rem);
-      }
+      // &__color-block-wrapper {
+      //   height: calc(100vh + 5.55rem);
+      // }
 
       &__content-wrapper {
         display: grid;
@@ -141,10 +142,6 @@
 
   @media only screen and (min-width: $desktop) {
     .landing-page {
-      // &__image {
-      //   max-width: 620px;
-      // }
-
       &__heading {
         font-size: 3.3rem;
       }

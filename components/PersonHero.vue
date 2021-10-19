@@ -51,7 +51,8 @@ export default {
     position: absolute;
     width: 100vw;
     top: 0;
-    height: calc(100vh + 4.8rem);
+    // height: calc(100vh + 4.8rem);
+    height: 100vh;
     max-width: 1200px;
     margin-left: auto; 
     margin-right: auto;
@@ -110,7 +111,7 @@ export default {
 
   &__image {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
   }
 
   &__overlay {

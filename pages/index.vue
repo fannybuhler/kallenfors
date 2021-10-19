@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     <LandingPage />
     <AboutUs />
     <Intro
@@ -28,9 +28,11 @@
       <div class="carousel__color-block"></div>
     </div>
     <div class="slides">
-      <Carousel 
-        :carousel="carousel"
-      />
+      <div class="slides__wrapper">
+        <Carousel 
+          :carousel="carousel"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -52,13 +54,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.slides {
-  max-width: none !important;
-  width: 100vw !important;
-  position: relative;
-  left: 0;
-  right: 0;
-}
+// .slides {
+//   max-width: 100vw !important;
+//   width: 100vw !important;
+//   position: relative;
+//   left: 50%;
+//   right: 50%;
+//   margin-left: -50vw;
+//   margin-right: -50vw;
+
+//   &__wrapper {
+//     overflow: hidden;
+//     max-width: 99.7%;
+//   }
+// }
 
 .carousel {
   @include mainContent();

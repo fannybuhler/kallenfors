@@ -17,6 +17,19 @@
       heading="Erfarenhet"
       :items="items"
     />
+    <div class="intro">
+      <h2 class="intro__heading">Andra engagemang</h2>
+      <div class="intro__span"></div>
+    </div>
+    <Intro
+      modifier="image-right"
+      :alt="terapihundar.alt"
+      :image="terapihundar.image"
+      :heading="terapihundar.heading"
+      :description="terapihundar.description"
+      :externalLink="terapihundar.externalLink"
+      :span="false"
+    />
   </div>
 </template>
 
@@ -24,18 +37,43 @@
 import items from '@/data/experience-ak'
 import skills from '@/data/featured-skills-ak'
 import hero from '@/data/hero-ak'
+import terapihundar from '@/data/terapihundar'
 
 export default {
   data () {
     return {
       items,
       skills,
-      hero
+      hero,
+      terapihundar
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.intro {
+  @include mainContent();
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &__heading {
+    @include h2();
+  }
+
+  &__span {
+    background: black;
+    height: 1px;
+    width: 70%;
+    margin-top: 1rem;
+    position: relative;
+    left: 5%;
+
+    @media only screen and (min-width: $tablet) {
+      width: 50%;
+    }
+  }
+}
 
 </style>

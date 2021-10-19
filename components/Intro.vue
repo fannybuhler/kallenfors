@@ -16,8 +16,12 @@
     <div class="intro__column">
       <div class="intro__info">
         <h3 class="intro__heading intro__heading--uc" v-html="heading" />
-        <div class="intro__span"></div>
-        <p class="intro__body" v-html="description" />
+        <div v-if="span" class="intro__span"></div>
+        <p class="intro__body">
+          {{ description }}
+          <a  class="intro__external-link" v-if="externalLink" :href="externalLink">här</a>
+        </p>
+        
       </div>
     </div>
   </div>
@@ -33,7 +37,12 @@ export default {
     lastName: String,
     image: String,
     heading: String,
-    description: String
+    description: String,
+    externalLink: String,
+    span: {
+      type: Boolean,
+      default: true
+    },
   }
 }
 </script>
@@ -42,7 +51,7 @@ export default {
 .intro {
   $b: &;
   @include mainContent();
-  padding-bottom: 3rem;
+  @include blockPadding();
   overflow: hidden;
 
   @media only screen and (min-width: $tablet) {
@@ -166,6 +175,7 @@ export default {
     @include h3();
     font-weight: 300;
     line-height: 160%;
+    margin-bottom: 1.5rem;
 
     &--uc {
       text-transform: uppercase;
@@ -176,8 +186,24 @@ export default {
     background: black;
     height: 1px;
     width: 30%;
-    margin: 1.5rem 0;
+    // margin: 1.5rem 0;
     z-index: 2;
+  }
+
+  &__body {
+    margin-top: 1.5rem;
+  }
+
+  &__external-link {
+    text-decoration-color: $pop;
+    color: black;
+    font-size: 1.4rem;
+    vertical-align: text-top;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration-color: $darkpop;
+    }
   }
 }
 </style>

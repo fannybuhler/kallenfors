@@ -38,9 +38,14 @@ body {
   margin: 0;
 }
 
+// * {
+//   outline: 1px solid #f00 !important;
+// }
+
 .landing-background {
   height: 100vh;
   width: 100vw;
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
