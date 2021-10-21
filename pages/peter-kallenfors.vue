@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="peter">
     <PersonHero
       :image="hero.image"
       :alt="hero.alt"
@@ -36,6 +36,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.peter {
+  @include pageWrap();
+}
 </style>

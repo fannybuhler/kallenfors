@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="interim">
     <SubpageHero
       :color="hero.color"
       :image="hero.image"
@@ -27,3 +27,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.interim {
+  @include pageWrap();
+}
+</style>

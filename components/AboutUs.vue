@@ -15,8 +15,12 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  @include blockPadding();
   @include mainContent();
+  padding-top: 3rem;
+
+  @media only screen and (min-width: $desktop) {
+    padding-top: 4rem;
+  }
 
   &__heading {
     font-family: 'Playfair regular';

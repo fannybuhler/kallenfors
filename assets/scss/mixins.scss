@@ -6,6 +6,11 @@
   margin-right: auto;
 }
 
+@mixin pageWrap() {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 @mixin blockPadding() {
   padding-top: 3rem;
   padding-bottom: 3rem;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ak">
     <PersonHero
       :image="hero.image"
       :alt="hero.alt"
@@ -52,6 +52,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ak {
+  @include pageWrap();
+}
 .intro {
   @include mainContent();
   display: flex;

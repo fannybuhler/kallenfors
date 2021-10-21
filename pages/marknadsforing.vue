@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="marknadsforing">
     <SubpageHero 
       :color="hero.color"
       :image="hero.image"
@@ -21,3 +21,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.marknadsforing {
+  @include pageWrap();
+}
+</style>
