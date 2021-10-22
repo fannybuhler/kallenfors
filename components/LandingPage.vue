@@ -7,7 +7,7 @@
       <h1 class="landing-page__heading">Peter <br> & <br> Anna-Karin <br> Källenfors</h1>
       <img class="landing-page__image" src="~/assets/images/photos/landingpage-big.png" alt="corporate photo of lawyers">
       <h3 class="landing-page__subheading">Law & <br> Consulting</h3>
-      <div class="landing-page__span"></div>
+      <!-- <div class="landing-page__span"></div> -->
     </div>
   </header>
 </template>
@@ -49,6 +49,7 @@
     text-transform: uppercase;
     line-height: 100%;
     font-weight: 600;
+    margin-top: 5%;
     margin-bottom: 5px;
     z-index: 1;
   }
@@ -58,6 +59,7 @@
     margin-top: 10px;
     width: 70%;
     box-shadow: 0px 35px 25px -25px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
   }
 
   &__subheading {
@@ -68,27 +70,12 @@
     margin-top: 5px;
     z-index: 1;
     padding-bottom: 70px;
-
-    &:after {
-      content: "";
-      background: black;
-      position: absolute;
-      bottom: calc(100vh - 92vh);
-      left: 0;
-      height: 1px;
-      width: 70%;
-      max-width: 600px;
-    }
   }
 
   
 
   @media only screen and (min-width: $tablet) {
     .landing-page {
-      // &__color-block-wrapper {
-      //   height: calc(100vh + 5.55rem);
-      // }
-
       &__content-wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
