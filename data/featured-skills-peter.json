@@ -1,31 +1,31 @@
 [
   {
-    "image": "icons/handshake.png",
+    "image": "icons/agreement.png",
     "heading": "Avtalsrätt",
     "leading": "Upprättande och granskning av ett bolags samtliga komersiella avtal."
   },
   {
-    "image": "icons/hammer.png",
+    "image": "icons/suitcase.png",
     "heading": "Arbtesrätt",
     "leading": "Hantering och granskning av ett bolags samtliga arbetsrättstvister."
   },
   {
-    "image": "icons/agreement.png",
+    "image": "icons/risk.png",
     "heading": "Bolagsrätt",
     "leading": "Support för bolagets ledning gällande bland annat aktiebolagslagens styrande regler."
   },
   {
-    "image": "icons/agreement.png",
+    "image": "icons/handshake.png",
     "heading": "Hyresrätt",
     "leading": "Granskning och förhandling av hyresavtal för komersiella lokaler."
   },
   {
-    "image": "icons/agreement.png",
+    "image": "icons/sustainability.png",
     "heading": "Hållbarhet",
     "leading": "Upprättande av bolags hållbarhetspolicys, även kallat Code of Conduct."
   },
   {
-    "image": "icons/agreement.png",
+    "image": "icons/seo.png",
     "heading": "GDPR",
     "leading": "Rådgivning kring hantering av personuppgifter."
   }

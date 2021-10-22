@@ -35,7 +35,7 @@ export default {
 
   &__heading {
     @include h2();
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
   }
 

@@ -44,12 +44,12 @@ export default {
   position: relative;
 
   &__image {
+    display: block;
     width: 100%;
     max-height: 80vh;
     min-height: 50vh;
     object-fit: cover;
     object-position: center 75%;
-    display: block;
   }
 
   &__content {

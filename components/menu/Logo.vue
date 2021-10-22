@@ -1,7 +1,7 @@
 <template>
   <div class="logo">
     <NuxtLink to="/">
-      <img class="logo__image" src="@/assets/images/icons/kallenfors-logo.png" alt="Källenfors logotype">
+      <img class="logo__image" src="@/assets/images/icons/logo.svg" alt="Källenfors logotype">
     </NuxtLink>
   </div>
 </template>
@@ -27,7 +27,10 @@ export default {
 
   &__image {
     width: 80%;
-    max-width: 160px;
+
+    @media only screen and (min-width: $desktop) {
+      width: 100%;
+    }
   }
 }
 

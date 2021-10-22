@@ -1,6 +1,8 @@
 <template>
   <div class="promo-card">
-    <img class="promo-card__image" :src="imageUrl" />
+    <div class="promo-card__size">
+      <img class="promo-card__image" :src="imageUrl" />
+    </div>
     <div class="promo-card__info">
       <h3 class="promo-card__heading">{{ heading }}</h3>
       <p class="promo-card__leading">{{ leading }}</p>
@@ -34,9 +36,21 @@ export default {
 
 <style lang="scss" scoped>
 .promo-card {
-  &__image {
+  &__size {
     width: 100%;
-    display: block;
+    height: 100%;
+    min-height: 250px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    height: auto;
+    width: auto;
+    max-width: 70%;
+    max-height: 80%;
   }
 
   &__info {
@@ -47,21 +61,9 @@ export default {
     @include h4();
   }
 
-  &__leading {
-    //
-  }
-
-  &__meta {
-    margin: 1rem 0 0;
-  }
-
   &__tag {
     font-size: 14px;
     color: #696969;
-    // padding: 0.5rem 1rem;
-    // background: rgba(#000, 0.1);
-    // margin: 0.5rem 0.5rem 0 0;
-    // border-radius: 0.5rem;
   }
 }
 </style>

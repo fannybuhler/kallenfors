@@ -120,7 +120,7 @@ export default {
     left: 0;
     top: 0;
     width: 100%;
-    height: 98.5%;
+    height: 99%;
     text-align: center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 24.85%, rgba(0, 0, 0, 0) 75.42%, rgba(0, 0, 0, 0.4) 100%);
   }
