@@ -23,9 +23,7 @@
               <textarea name="body" placeholder="Skriv ditt meddelande här..."></textarea>
             </label>
           </p>
-          <p>
-            <input class="footer__send-form-button" type="submit" value="Skicka">
-          </p>
+          <button class="footer__send-form-button" type="submit" value="Skicka">Skicka</button>
         </form>
       </div>
       <div class="footer__info-wrapper">
@@ -39,7 +37,9 @@
         <p class="footer__info-heading">Adress Sundsvall</p>
         <p class="footer__info-body">Skärsätt 118, <br> 862 95 Njurunda</p>
         <h4 class="footer__subheading">Information</h4>
-        <p class="footer__info-heading">Fakturainfo <i class="arrow right"></i></p>
+        <p class="footer__info-heading">Fakturainfo</p>
+        <!-- <i class="arrow right"></i> -->
+        <p class="footer__info-body">inbox.lev851158@arkivplats.se</p>
         <p class="footer__copyright">© 2021 KÄLLENFORS</p>
       </div>
     </div>

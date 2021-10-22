@@ -56,7 +56,7 @@ export default {
     left: 0;
     right: 0;
 
-    @media only screen and (min-width: $desktop) {
+    @media only screen and (min-width: $tablet) {
       display: grid;
     }
   }
@@ -66,8 +66,13 @@ export default {
     background-color: $pop;
     display: none;
 
-    @media only screen and (min-width: $desktop) {
+    @media only screen and (min-width: $tablet) {
       display: block;
+      grid-column: 1 / 3;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      grid-column: 2 / 3;
     }
   }
 
@@ -121,7 +126,15 @@ export default {
   &__image {
     z-index: 1;
     width: 100%;
-    max-width: 450px;
+
+    @media only screen and (min-width: $tablet) {
+      max-width: 350px;
+      max-height: 80vh;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      max-width: 400px;
+    }
   }
 
   &__span {
@@ -131,7 +144,7 @@ export default {
     z-index: 1;
     margin-bottom: 1rem;
 
-    @media only screen and (min-width: $desktop) {
+    @media only screen and (min-width: $tablet) {
       width: 150%;
       margin-left: -100%;
     }

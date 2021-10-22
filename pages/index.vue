@@ -53,24 +53,11 @@ export default {
 .index-wrapper {
   @include pageWrap();
 }
-// .slides {
-//   max-width: 100vw !important;
-//   width: 100vw !important;
-//   position: relative;
-//   left: 50%;
-//   right: 50%;
-//   margin-left: -50vw;
-//   margin-right: -50vw;
-
-//   &__wrapper {
-//     overflow: hidden;
-//     max-width: 99.7%;
-//   }
-// }
 
 .carousel {
   @include mainContent();
   position: relative;
+  margin-top: 3rem;
 
   &__heading {
     font-family: 'Playfair regular';

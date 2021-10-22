@@ -57,9 +57,9 @@
   &__image {
     z-index: 1;
     margin-top: 10px;
-    width: 70%;
+    max-width: 80%;
     box-shadow: 0px 35px 25px -25px rgba(0, 0, 0, 0.25);
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &__subheading {
@@ -67,7 +67,7 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 200;
-    margin-top: 5px;
+    margin-top: 10px;
     z-index: 1;
     padding-bottom: 70px;
   }
@@ -87,9 +87,9 @@
       &__image {
         grid-column: 2 / 8;
         grid-row: 2 / 3;
-        object-fit: cover;
         width: 100%;
         max-height: 100%;
+        max-width: 100%;
         align-self: end;
       }
 
