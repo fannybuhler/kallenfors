@@ -80,7 +80,7 @@ export default {
 
     @media only screen and (min-width: $tablet) {
       flex-direction: row;
-      @include mainContent();
+      justify-content: flex-end;
     }
   }
 
@@ -99,6 +99,8 @@ export default {
     @include h1();
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 2rem;
 
     @media only screen and (min-width: $tablet) {
@@ -118,7 +120,8 @@ export default {
 
   &__image {
     z-index: 1;
-    margin-right: 2rem;
+    width: 100%;
+    max-width: 450px;
   }
 
   &__span {
@@ -135,8 +138,8 @@ export default {
   }
 
   &__description {
-    margin: 0 .5rem 1rem .5rem;
-    
+    @include mainContent();
+
     &--last {
       padding-bottom: 3rem;
     }
