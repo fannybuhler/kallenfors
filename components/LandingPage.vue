@@ -58,7 +58,7 @@
     z-index: 1;
     margin-top: 10px;
     max-width: 80%;
-    box-shadow: 0px 35px 25px -25px rgba(0, 0, 0, 0.25);
+    // box-shadow: 0px 35px 25px -25px rgba(0, 0, 0, 0.25);
     object-fit: contain;
   }
 
