@@ -157,6 +157,12 @@ select:-webkit-autofill:focus
     letter-spacing: 4px;
     float: right;
     color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: $darkpop;
+    }
   }
 
   &__copyright {

@@ -62,18 +62,9 @@ export default {
   }
 
   &__color-block {
+    display: grid;
     grid-column: 2 / 3;
     background-color: $pop;
-    display: none;
-
-    @media only screen and (min-width: $tablet) {
-      display: block;
-      grid-column: 1 / 3;
-    }
-
-    @media only screen and (min-width: $desktop) {
-      grid-column: 2 / 3;
-    }
   }
 
   &__content-wrapper {

@@ -1,5 +1,14 @@
 [
   {
+    "image": "photos/bolagsverket.jpg",
+    "alt": "arkitektur med blå himmel",
+    "heading": "Chefsjurist på Bolagsverket",
+    "leading": "Peter ansvarade för juridikavdelningen som bestod av 35 jurister på Sveriges populäraste myndighet",
+    "link": "/peter-kallenfors",
+    "name": "Peter",
+    "dark": true
+  },
+  {
     "image": "photos/life-slide.jpg",
     "alt": "kvinna som rullar ut yogamatta",
     "heading": "Chefsjurist för den Nordiska koncernen, Life Hälsokost",
@@ -13,15 +22,6 @@
     "alt": "vindruvor på vinranka",
     "heading": "Chefsjurist på Systembolaget",
     "leading": "Peter hanterade bland annat den största muthärvan i Sveriges historia, utöver övriga juridiska ansvarsområden.",
-    "link": "/peter-kallenfors",
-    "name": "Peter",
-    "dark": true
-  },
-  {
-    "image": "photos/bolagsverket.jpg",
-    "alt": "arkitektur med blå himmel",
-    "heading": "Chefsjurist på Bolagsverket",
-    "leading": "Peter ansvarade för juridikavdelningen som bestod av 35 jurister på Sveriges populäraste myndighet",
     "link": "/peter-kallenfors",
     "name": "Peter",
     "dark": true
