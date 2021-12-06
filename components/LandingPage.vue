@@ -48,7 +48,7 @@
     font-size: 2.3rem;
     text-transform: uppercase;
     line-height: 100%;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 5%;
     margin-bottom: 5px;
     z-index: 1;
@@ -134,7 +134,8 @@
       }
 
       &__subheading {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        line-height: 100%;
       }
 
       &__span {

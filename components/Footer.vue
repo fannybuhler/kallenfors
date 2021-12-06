@@ -162,6 +162,7 @@ select:-webkit-autofill:focus
   color: #fff;
   margin: 0 auto;
   padding: 3rem 5%;
+  padding-bottom: calc(3rem + 25px);
 
   &__wrapper {
     max-width: 1200px;
