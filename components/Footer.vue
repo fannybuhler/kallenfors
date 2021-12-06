@@ -3,27 +3,33 @@
     <div class="footer__wrapper">
       <div class="footer__form-wrapper">
         <h3 class="footer__heading">Maila oss</h3>
-        <form class="footer__form" action="">
-          <input type="hidden">
+        <form class="footer__form" @submit.prevent="submitForm">
+          <input
+            type="checkbox"
+            name="botcheck"
+            id=""
+            style="display: none"
+          />
           <p>
-            <label>
+            <label for="name">
               NAMN <br>
-              <input type="text" name="name">
+              <input type="text" name="name" id="name" required v-model="form.name">
             </label>
           </p>
           <p>
-            <label>
+            <label for="email">
               E-POST<br>
-              <input type="text" name="email">
+              <input type="text" name="email" id="email" required v-model="form.email">
             </label>
           </p>
           <p>
-            <label>
+            <label for="message">
               MEDDELANDE<br>
-              <textarea name="body" placeholder="Skriv ditt meddelande här..."></textarea>
+              <textarea name="message" placeholder="Skriv ditt meddelande här..." id="message" required v-model="form.message"></textarea>
             </label>
           </p>
-          <button class="footer__send-form-button" type="submit" value="Skicka">Skicka</button>
+          <button class="footer__send-form-button" type="submit">Skicka</button>
+          <p v-if="result">{{ result }}</p>
         </form>
       </div>
       <div class="footer__info-wrapper">
@@ -47,9 +53,63 @@
 </template>
 
 <script>
-export default {
+import axios from "axios";
 
-}
+export default {
+  data() {
+    return {
+      form: {
+        apikey: "503cd22b-f96e-4bcd-aace-f8916da840e8",
+        subject: "New Submission from Web3Forms",
+
+        name: "",
+        email: "",
+        message: "",
+      },
+      result: "",
+      status: "",
+    };
+  },
+  methods: {
+    async submitForm(e) {
+      this.result = "Please wait...";
+      axios.create({
+        headers: { "Content-Type": "application/json" },
+      });
+      await axios
+        .post("https://api.web3forms.com/submit", this.form)
+        .then(async (response) => {
+          //let json = await response.json();
+          //this.result = json.message;
+          console.log(response);
+          this.result = response.data.message;
+
+          if (response.status === 200) {
+            this.status = "success";
+          } else {
+            console.log(response);
+            this.status = "error";
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          this.status = "error";
+          this.result = "Something went wrong!";
+        })
+        .then(() => {
+          const form = this.form;
+          form.name = "";
+          form.email = "";
+          form.message = "";
+
+          setTimeout(() => {
+            this.result = "";
+            this.status = "";
+          }, 5000);
+        });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

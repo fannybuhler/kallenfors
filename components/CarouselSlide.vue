@@ -7,9 +7,9 @@
       <div class="carousel__text">
         <h3 class="carousel__heading">{{ heading }}</h3>
         <p class="carousel__leading">{{ leading }}</p>
-        <button class="carousel__button">
-          <NuxtLink :to="link">{{ name }}s arbete</NuxtLink>
-        </button>
+        <NuxtLink :to="link">
+          <button class="carousel__button">{{ name }}s arbete</button>
+        </NuxtLink>
       </div>
     </div>
   </div>
