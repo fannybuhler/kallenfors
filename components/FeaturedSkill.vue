@@ -67,18 +67,22 @@ export default {
 
   &__heading {
     @include h3();
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 24px;
+    }
   }
 
   &__span {
     background: $black;
     color: $black;
     height: 1px;
-    width: 30px;
-    margin: 5px 0;
+    width: 4rem;
+    margin: .3rem 0 .5rem 0;
   }
 
   &__body {
-    font-size: 12px;
+    font-size: 14px;
     word-break: 5;
     line-height: 140%;
   }

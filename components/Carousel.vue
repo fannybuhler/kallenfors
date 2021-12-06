@@ -28,10 +28,6 @@ export default {
     }
   },
 
-  mounted() {
-    console.log("carousel:", this.$props.carousel)
-  },
-
   data() {
     return {
       swiperOptions: {
@@ -48,11 +44,6 @@ export default {
       return this.$refs.mySwiper.$swiper
     }
   },
-
-  mounted() {
-    console.log('Current Swiper instance object', this.swiper)
-    // this.swiper.slideTo(3, 1000, false)
-  }
 }
 </script>
 

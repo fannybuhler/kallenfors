@@ -112,6 +112,7 @@ export default {
   &__image {
     width: 100%;
     max-width: 450px;
+    display: block;
   }
 
   &__overlay {
@@ -120,7 +121,7 @@ export default {
     left: 0;
     top: 0;
     width: 100%;
-    height: 99%;
+    height: 100%;
     text-align: center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 24.85%, rgba(0, 0, 0, 0) 75.42%, rgba(0, 0, 0, 0.4) 100%);
   }

@@ -38,8 +38,7 @@ export default {
 .promo-card {
   &__size {
     width: 100%;
-    height: 100%;
-    min-height: 250px;
+    height: 250px;
     background-color: #fff;
     display: flex;
     justify-content: center;

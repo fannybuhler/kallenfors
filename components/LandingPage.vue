@@ -6,7 +6,7 @@
     <div class="landing-page__content-wrapper">
       <h1 class="landing-page__heading">Peter <br> & <br> Anna-Karin <br> Källenfors</h1>
       <img class="landing-page__image" src="~/assets/images/photos/landingpage-big.png" alt="corporate photo of lawyers">
-      <h3 class="landing-page__subheading">Law & <br> Consulting</h3>
+      <h2 class="landing-page__subheading">Law & <br> Consulting</h2>
       <!-- <div class="landing-page__span"></div> -->
     </div>
   </header>
