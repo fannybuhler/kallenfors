@@ -218,7 +218,7 @@ select:-webkit-autofill:focus
     float: right;
     color: #000;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.1s;
 
     &:hover {
       background: $darkpop;
