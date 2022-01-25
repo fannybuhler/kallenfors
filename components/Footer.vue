@@ -60,7 +60,7 @@ export default {
     return {
       form: {
         apikey: "503cd22b-f96e-4bcd-aace-f8916da840e8",
-        subject: "New Submission from Web3Forms",
+        subject: "Nytt mail från Kallenfors.com",
 
         name: "",
         email: "",
@@ -72,7 +72,7 @@ export default {
   },
   methods: {
     async submitForm(e) {
-      this.result = "Please wait...";
+      this.result = "Skickar...";
       axios.create({
         headers: { "Content-Type": "application/json" },
       });
@@ -94,7 +94,7 @@ export default {
         .catch((error) => {
           console.log(error);
           this.status = "error";
-          this.result = "Something went wrong!";
+          this.result = "Något gick fel!";
         })
         .then(() => {
           const form = this.form;
