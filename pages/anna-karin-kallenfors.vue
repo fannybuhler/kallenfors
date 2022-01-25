@@ -17,9 +17,9 @@
       heading="Erfarenhet"
       :items="items"
     />
-    <div class="intro">
-      <h2 class="intro__heading">Andra engagemang</h2>
-      <div class="intro__span"></div>
+    <div class="second-intro">
+      <h2 class="second-intro__heading">Andra engagemang</h2>
+      <div class="second-intro__span"></div>
     </div>
     <Intro
       modifier="image-right"
@@ -55,7 +55,7 @@ export default {
 .ak {
   @include pageWrap();
 }
-.intro {
+.second-intro {
   @include mainContent();
   display: flex;
   flex-direction: column;

@@ -53,6 +53,7 @@ export default {
   @include mainContent();
   @include blockPadding();
   overflow: hidden;
+  flex-direction: column;
 
   @media only screen and (min-width: $tablet) {
     display: flex;
