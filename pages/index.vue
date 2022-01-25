@@ -29,7 +29,9 @@
         <div class="carousel__color-block"></div>
       </div>
     </div>
-    <Carousel :carousel="carousel" />
+    <client-only>
+      <Carousel :carousel="carousel" />
+    </client-only>
   </div>
 </template>
 
