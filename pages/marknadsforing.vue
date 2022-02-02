@@ -23,7 +23,3 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.marknadsforing {
-  @include pageWrap();
-}
-</style>

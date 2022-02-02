@@ -44,6 +44,7 @@ export default {
 <style lang="scss" scoped>
 .person-hero {
   min-height: calc(100vh - 70px);
+  background: $white;
 
   &__color-block-wrapper {
     display: none;
@@ -80,6 +81,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 1200px;
 
     @media only screen and (min-width: $tablet) {
       flex-direction: row;
@@ -92,7 +94,7 @@ export default {
     align-items: center;
 
     @media only screen and (min-width: $tablet) {
-      max-width: 50%;
+      max-width: 40%;
     }
   }
 
@@ -146,11 +148,6 @@ export default {
     width: 50%;
     z-index: 1;
     margin-bottom: 1rem;
-
-    // @media only screen and (min-width: $desktop) {
-    //   width: 150%;
-    //   margin-left: -120%;
-    // }
   }
 
   &__contact {

@@ -1,31 +1,39 @@
 <template>
-  <header class="landing-page">
+  <div class="landing-page">
     <div class="landing-page__color-block-wrapper">
       <div class="landing-page__color-block"></div>
     </div>
     <div class="landing-page__content-wrapper">
       <h1 class="landing-page__heading">Peter <br> & <br> Anna-Karin <br> Källenfors</h1>
-      <img class="landing-page__image" src="~/assets/images/photos/kallenfors.jpg" alt="corporate photo of lawyers">
+      <div class="landing-page__media">
+        <img class="landing-page__image" src="~/assets/images/photos/kallenfors.jpg" alt="corporate photo of lawyers">
+      </div>
       <h2 class="landing-page__subheading">Law & <br> Consulting</h2>
     </div>
-  </header>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 .landing-page {
+  background: $white;
+  height: calc(100vh - 70px);
+  display: flex;
+
   &__color-block-wrapper {
+    @include pageWrap();
     display: grid;
     grid-template-columns: 5% minmax(125px, 350px) 70%;
     position: absolute;
-    width: 100vw;
     top: 0;
-    // height: calc(100vh + 4.8rem);
-    height: 100vh;
-    max-width: 1200px;
-    margin-left: auto; 
-    margin-right: auto;
     left: 0;
     right: 0;
+    height: 100%;
+    width: 100%;
+    // width: 100vw;
+    // min-height: 100vh;
+    // max-width: 1200px;
+    // margin-left: auto; 
+    // margin-right: auto;
   }
 
   &__color-block {
@@ -34,8 +42,8 @@
   }
 
   &__content-wrapper {
-    background-color: $white; 
-    height: calc(100vh - 70px);
+    @include pageWrap();
+    background-color: $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,12 +61,16 @@
     z-index: 1;
   }
 
-  &__image {
+  &__media {
     z-index: 1;
     margin-top: 10px;
     max-width: 80%;
-    // box-shadow: 0px 35px 25px -25px rgba(0, 0, 0, 0.25);
-    object-fit: contain;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 
   &__subheading {
@@ -71,25 +83,23 @@
     padding-bottom: 70px;
   }
 
-  
-
   @media only screen and (min-width: $tablet) {
     .landing-page {
       &__content-wrapper {
+        height: 100%;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 25px;
         padding-left: 0;
       }
 
-      &__image {
+      &__media {
         grid-column: 2 / 8;
         grid-row: 2 / 3;
-        width: 100%;
-        max-height: 100%;
-        max-width: 100%;
         align-self: end;
+        justify-self: end;
       }
 
       &__heading {

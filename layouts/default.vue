@@ -1,10 +1,7 @@
 <template>
   <div>
-    <div class="landing-background"></div>
     <MenuNavbar />
-    <div id="pageWrap">
-      <Nuxt />
-    </div>
+    <Nuxt />
     <Footer />
   </div>
 </template>
@@ -42,14 +39,14 @@ body {
 //   outline: 1px solid #f00 !important;
 // }
 
-.landing-background {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: $white;
-  z-index: -1;
-}
+// .landing-background {
+//   height: 100vh;
+//   width: 100vw;
+//   max-width: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background-color: $white;
+//   z-index: -1;
+// }
 </style>

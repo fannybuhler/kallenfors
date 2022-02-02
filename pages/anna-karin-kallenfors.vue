@@ -52,11 +52,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.ak {
-  @include pageWrap();
-}
 .second-intro {
   @include mainContent();
+  @include pageWrap();
   display: flex;
   flex-direction: column;
   align-items: flex-end;

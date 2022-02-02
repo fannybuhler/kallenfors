@@ -1,49 +1,50 @@
 <template>
-  <nav class="navbar">
-    <!-- Not the best solution using mediaqueries in each component to determine mobile or desktop navigation-->
-    <MenuLogo />
-    <MenuBurger />
-    <MenuSidebar>
-      <ul class="navbar__list">
-        <li
-          class="navbar__list-item"
-          @click="closeSidebarPanel"
-          v-if="isPanelOpen"
-        >
-          <NuxtLink to="/">Hem</NuxtLink>
-        </li>
-        <li
-          class="navbar__list-item"
-          @click="closeSidebarPanel"
-          v-if="isPanelOpen"
-        >
-          <NuxtLink to="/juridik">Juridik</NuxtLink>
-        </li>
-        <li
-          class="navbar__list-item"
-          @click="closeSidebarPanel"
-          v-if="isPanelOpen"
-        >
-          <NuxtLink to="/styrelsearbete">Styrelsearbete</NuxtLink>
-        </li>
-        <li
-          class="navbar__list-item"
-          @click="closeSidebarPanel"
-          v-if="isPanelOpen"
-        >
-          <NuxtLink to="/marknadsforing">Marknadsföring</NuxtLink>
-        </li>
-        <li
-          class="navbar__list-item"
-          @click="closeSidebarPanel"
-          v-if="isPanelOpen"
-        >
-          <NuxtLink to="/interimsuppdrag">Interimsuppdrag</NuxtLink>
-        </li>
-      </ul>
-    </MenuSidebar>
-    <MenuDesktop />
-  </nav>
+  <div class="navbar">
+    <nav class="navbar__nav">
+      <MenuLogo />
+      <MenuBurger />
+      <MenuSidebar>
+        <ul class="navbar__list">
+          <li
+            class="navbar__list-item"
+            @click="closeSidebarPanel"
+            v-if="isPanelOpen"
+          >
+            <NuxtLink to="/">Hem</NuxtLink>
+          </li>
+          <li
+            class="navbar__list-item"
+            @click="closeSidebarPanel"
+            v-if="isPanelOpen"
+          >
+            <NuxtLink to="/juridik">Juridik</NuxtLink>
+          </li>
+          <li
+            class="navbar__list-item"
+            @click="closeSidebarPanel"
+            v-if="isPanelOpen"
+          >
+            <NuxtLink to="/styrelsearbete">Styrelsearbete</NuxtLink>
+          </li>
+          <li
+            class="navbar__list-item"
+            @click="closeSidebarPanel"
+            v-if="isPanelOpen"
+          >
+            <NuxtLink to="/marknadsforing">Marknadsföring</NuxtLink>
+          </li>
+          <li
+            class="navbar__list-item"
+            @click="closeSidebarPanel"
+            v-if="isPanelOpen"
+          >
+            <NuxtLink to="/interimsuppdrag">Interimsuppdrag</NuxtLink>
+          </li>
+        </ul>
+      </MenuSidebar>
+      <MenuDesktop />
+    </nav>
+  </div>
 </template>
 
 <script>
@@ -63,10 +64,14 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
-  font-size: 18px;
-  display: flex;
-  justify-content: flex-end;
   background: $white;
+
+  &__nav {
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    background: $white;
+  }
 
   &__list {
     list-style: none;
@@ -93,7 +98,7 @@ a:hover {
 }
 
 @media only screen and (min-width: $desktop) {
-  .navbar {
+  .navbar__nav {
     margin: 0 auto;
     position: relative;
     max-width: 1200px;

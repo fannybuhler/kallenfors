@@ -22,7 +22,7 @@
 }
 
 // Box
-@mixin box($box-color: cyan, $padding: false) {
+@mixin box($box-color: red, $padding: false) {
   border: 1px dotted $box-color;
   background: rgba($box-color, 0.1);
 
@@ -32,7 +32,7 @@
 }
 
 // Nested boxes
-@mixin boxer($box-color: cyan, $padding: false, $levels: 4) {
+@mixin boxer($box-color: red, $padding: false, $levels: 4) {
   @include box($box-color, $padding);
 
   > * {

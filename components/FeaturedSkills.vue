@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 .featured-skills {
+  @include pageWrap();
   @include mainContent();
   @include blockPadding();
 

@@ -50,6 +50,7 @@ export default {
 <style lang="scss" scoped>
 .intro {
   $b: &;
+  @include pageWrap();
   @include mainContent();
   @include blockPadding();
   overflow: hidden;

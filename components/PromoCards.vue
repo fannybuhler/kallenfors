@@ -32,6 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 .promo-cards {
+  @include pageWrap();
   @include mainContent();
   @include blockPadding();
 

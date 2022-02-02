@@ -41,8 +41,10 @@ export default {
 <style lang="scss" scoped>
 .subpage-hero {
   min-height: calc(100vh - 70px);
+  background: $white;
 
   &__color-block-wrapper {
+    @include pageWrap();
     display: none;
     grid-template-columns: 5% minmax(125px, 350px) 70%;
     position: absolute;
@@ -68,6 +70,7 @@ export default {
   }
 
   &__content-wrapper {
+    @include pageWrap();
     background-color: $white; 
     display: flex;
     flex-direction: column;

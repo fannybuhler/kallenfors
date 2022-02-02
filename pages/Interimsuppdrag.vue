@@ -27,9 +27,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.interim {
-  @include pageWrap();
-}
-</style>

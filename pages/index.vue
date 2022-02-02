@@ -1,7 +1,8 @@
 <template>
   <div class="index">
-    <div class="index-wrapper">
+      <!-- <LandingPageNew /> -->
       <LandingPage />
+    <div class="index-wrapper">
       <AboutUs />
       <Intro
         modifier="image-left"
