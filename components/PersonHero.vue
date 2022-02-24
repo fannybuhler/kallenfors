@@ -94,7 +94,7 @@ export default {
     align-items: center;
 
     @media only screen and (min-width: $tablet) {
-      max-width: 40%;
+      max-width: 50%;
     }
   }
 
@@ -109,6 +109,10 @@ export default {
 
   &__media {
     position: relative;
+
+    @media only screen and (min-width: $tablet) {
+      max-width: 50%;
+    }
   }
 
   &__image {
