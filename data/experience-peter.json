@@ -1,5 +1,11 @@
 [
   {
+    "image": "photos/menigo.png",
+    "heading": "Menigo Foodservice",
+    "leading": "",
+    "tags": ["Chefsjurist"]
+  },
+  {
     "image": "photos/Recipharm.png",
     "heading": "Recipharm",
     "leading": "",
@@ -13,7 +19,7 @@
   },
   {
     "image": "photos/maqs.jpeg",
-    "heading": "MAQS Advbokatbyrå",
+    "heading": "MAQS Advokatbyrå",
     "leading": "",
     "tags": ["Senior legal director"]
   },
