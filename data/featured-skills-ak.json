@@ -1,17 +1,17 @@
 [
   {
     "image": "icons/handshake.png",
-    "heading": "Heading 1",
-    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante."
+    "heading": "Projektledning",
+    "leading": "Ibland uppstår tillfällen då man kan behöva anlita en extern resurs för att driva ett specifikt och tidsbegränsat projekt, exempelvis styra upp och planera företagets kommunikation, ta fram en ny webbsida, planera och genomföra ett event, lansera en ny produkt eller få snurr på företagets sociala medier. Tillfälliga satsningar som man kanske inte har resurser, tid eller kompetens att utföra själv. Här kan jag vara en resurs. Oavsett storlek på projekt. "
   },
   {
-    "image": "icons/hammer.png",
-    "heading": "Heading 2",
-    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante."
+    "image": "icons/seo.png",
+    "heading": "Extern Marknadschef",
+    "leading": "Många företag saknar en marknadschef och marknadsavdelning internt på företaget. Istället anlitar man extern hjälp om och när man behöver, exempelvis en reklambyrå, mediabyrå, eventbyrå eller webbyrå. Utmaningen med detta är att man oftast behöver en person internt ändå, som ansvarar för och driver arbetet tillsammans med den externa byrån. Här kan du anlita mig som en externa marknadschef/avdelning. I den rollen arbetar jag ofta i nära samarbete med företagets VD och ledning, deltar vid strategiska möten, tar fram strategier/planer samt ansvarar löpande för företagets marknadsföring"
   },
   {
     "image": "icons/agreement.png",
-    "heading": "Heading 3",
-    "leading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar, mauris id ornare ultrices, ex ante finibus ante."
+    "heading": "Marknadsplan",
+    "leading": "Vi tar fram en unik marknadsplan anpassad för ert företag. Den baseras på de strategier som ert företag har som mål samt hur vi ska gå tillväga för att nå dem. Tillsammans ser över och analyserar er nuvarande marknadssituation och vilken position ni har just nu. Utifrån den kommer vi med rekommendationer och input kring hur ni kan antingen förvalta, utöka eller förändra er marknadsföring."
   }
 ]

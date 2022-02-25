@@ -1,5 +1,5 @@
 <template>
-  <div class="featured-skill">
+  <div class="featured-skill" :class="modifier ? `featured-skill--${modifier}` : '' ">
     <div class="featured-skill__icon">
       <img class="featured-skill__image" :src="imageUrl" alt="icon"/>
     </div>
@@ -17,6 +17,7 @@ export default {
     heading: String,
     leading: String,
     image: String,
+    modifier: String
   },
 
   computed: {
@@ -35,8 +36,12 @@ export default {
 .featured-skill {
   display: flex;
   width: fit-content;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
+  &--large-grid {
+    align-items: flex-start;
+  }
 
   &__icon {
     display: block;

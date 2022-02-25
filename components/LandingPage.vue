@@ -116,7 +116,7 @@
         padding-bottom: 0;
         align-self: end;
         margin: 0;
-        margin-bottom: -5px;
+        margin-bottom: -3px;
 
         &:after {
           display: none;

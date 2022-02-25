@@ -12,6 +12,7 @@
     <FeaturedSkills 
       heading="Expertis"
       :skills="skills"
+      modifier="large-grid"
     />
     <PromoCards
       heading="Erfarenhet"
