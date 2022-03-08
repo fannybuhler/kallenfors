@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import hero from '@/data/marknadsforing-hero'
+import hero from '@/data/hero-marknadsforing'
 
 export default {
   data () {

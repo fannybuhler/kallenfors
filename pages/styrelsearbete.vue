@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import hero from '@/data/styrelsearbete-hero'
+import hero from '@/data/hero-styrelsearbete'
 import items from '@/data/experience-styrelsearbete'
 
 export default {

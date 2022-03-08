@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import hero from '@/data/juridik-hero'
+import hero from '@/data/hero-juridik'
 
 export default {
   data () {

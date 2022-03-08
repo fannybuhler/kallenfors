@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import hero from '@/data/interimsuppdrag-hero'
+import hero from '@/data/hero-interimsuppdrag'
 import items from '@/data/experience-interim'
 
 export default {
