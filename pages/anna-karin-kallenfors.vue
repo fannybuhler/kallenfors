@@ -18,11 +18,11 @@
       heading="Erfarenhet"
       :items="items"
     />
-    <div class="second-intro">
+    <!-- <div class="second-intro">
       <h2 class="second-intro__heading">Andra engagemang</h2>
       <div class="second-intro__span"></div>
-    </div>
-    <Intro
+    </div> -->
+    <!-- <Intro
       modifier="image-right"
       :alt="terapihundar.alt"
       :image="terapihundar.image"
@@ -30,7 +30,7 @@
       :description="terapihundar.description"
       :externalLink="terapihundar.externalLink"
       :span="false"
-    />
+    /> -->
   </div>
 </template>
 

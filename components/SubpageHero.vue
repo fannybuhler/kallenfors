@@ -10,7 +10,11 @@
       <div class="subpage-hero__content">
         <h1 class="subpage-hero__heading">{{ heading }}</h1>
         <div class="subpage-hero__span"></div>
-        <p class="subpage-hero__description subpage-hero__description--last">{{ description }}</p>
+        <!-- <p class="subpage-hero__description subpage-hero__description--last">{{ description }}</p> -->
+        <p class="subpage-hero__description subpage-hero__description--last">
+          {{ description }}
+          <a class="subpage-hero__external-link" :style="{ textDecorationColor: color }" target="_blank" v-if="externalLink" :href="externalLink">här</a>
+        </p>
       </div>
     </div>
   </div>
@@ -23,7 +27,8 @@ export default {
     image: String,
     alt: String,
     heading: String,
-    description: String
+    description: String,
+    externalLink: String,
   },
 
   computed: {
@@ -146,10 +151,20 @@ export default {
 
   &__description {
     @include mainContent();
+    z-index: 3;
 
     &--last {
       padding-bottom: 3rem;
     }
+  }
+
+  &__external-link {
+    // text-decoration-color: $pop;
+    cursor: pointer;
+    color: black;
+    font-size: 1.4rem;
+    vertical-align: text-top;
+    text-transform: uppercase;
   }
 
   @media only screen and (min-width: $tablet) {

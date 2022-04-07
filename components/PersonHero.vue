@@ -6,7 +6,7 @@
     <div class="person-hero__content-wrapper">
       <div class="person-hero__media">
         <img class="person-hero__image" v-if="image" :src="require(`@/assets/images/${image}`)" :alt="alt">
-        <div class="person-hero__overlay"></div>
+        <!-- <div class="person-hero__overlay"></div> -->
       </div>
       <div class="person-hero__content">
         <h1 class="person-hero__heading">{{ heading }}</h1>

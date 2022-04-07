@@ -19,9 +19,8 @@
         <div v-if="span" class="intro__span"></div>
         <p class="intro__body">
           {{ description }}
-          <a  class="intro__external-link" v-if="externalLink" :href="externalLink">här</a>
+          <a class="intro__external-link" v-if="externalLink" :href="externalLink">här</a>
         </p>
-        
       </div>
     </div>
   </div>

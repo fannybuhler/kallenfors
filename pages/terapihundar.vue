@@ -6,6 +6,7 @@
       :alt="hero.alt"
       :heading="hero.heading"
       :description="hero.description"
+      :externalLink="hero.externalLink"
     />
   </div>
 </template>
