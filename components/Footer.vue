@@ -35,7 +35,8 @@
       <div class="footer__info-wrapper">
         <h4 class="footer__subheading">Kontakt</h4>
         <p class="footer__info-heading">Mail</p>
-        <p class="footer__info-body">info@kallenfors.com</p>
+        <p class="footer__info-body">anna-karin@kallenfors.com</p>
+        <p class="footer__info-body">peter@kallenfors.com</p>
         <p class="footer__info-heading">Telefon</p>
         <p class="footer__info-body">070-267 83 03</p>
         <p class="footer__info-heading">Adress Stockholm</p>
@@ -46,6 +47,7 @@
         <p class="footer__info-heading">Fakturainfo</p>
         <!-- <i class="arrow right"></i> -->
         <p class="footer__info-body">inbox.lev851158@arkivplats.se</p>
+        <p class="footer__info-body">559175-1440</p>
         <p class="footer__copyright">© 2021 KÄLLENFORS</p>
       </div>
     </div>
@@ -59,7 +61,7 @@ export default {
   data() {
     return {
       form: {
-        apikey: "503cd22b-f96e-4bcd-aace-f8916da840e8",
+        apikey: "58e602b2-5bf5-4fcc-9515-139aa10f755a",
         subject: "Nytt mail från Kallenfors.com",
 
         name: "",

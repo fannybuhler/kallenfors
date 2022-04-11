@@ -17,7 +17,7 @@
         <NuxtLink to="/interimsuppdrag">Interimsuppdrag</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/terapihundar">Andra engagemang</NuxtLink>
+        <NuxtLink to="/terapihundar">Terapihundar</NuxtLink>
       </li>
     </ul>
   </div>

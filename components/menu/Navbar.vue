@@ -40,6 +40,13 @@
           >
             <NuxtLink to="/interimsuppdrag">Interimsuppdrag</NuxtLink>
           </li>
+          <li
+            class="navbar__list-item"
+            @click="closeSidebarPanel"
+            v-if="isPanelOpen"
+          >
+            <NuxtLink to="/terapihundar">Terapihundar</NuxtLink>
+          </li>
         </ul>
       </MenuSidebar>
       <MenuDesktop />

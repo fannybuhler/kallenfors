@@ -15,17 +15,17 @@
     "image": "photos/systembolaget.png",
     "heading": "Systembolaget",
     "leading": "",
-    "tags": ["Ledamot"]
+    "tags": ["Sekreterare"]
   },
   {
     "image": "photos/life-logo.png",
     "heading": "Life Hälsokost",
     "leading": "",
-    "tags": ["Ledamot"]
+    "tags": ["Sekreterare"]
   },
   {
-    "image": "photos/bolagsverket.png",
-    "heading": "Bolagsverket",
+    "image": "photos/Ekobrottsmyndigheten.png",
+    "heading": "Ekobrottsmyndigheten",
     "leading": "",
     "tags": ["Ledamot"]
   }
