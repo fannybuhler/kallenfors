@@ -1,6 +1,5 @@
 <template>
   <div class="index">
-      <!-- <LandingPageNew /> -->
       <LandingPage />
     <div class="index-wrapper">
       <AboutUs />
