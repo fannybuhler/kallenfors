@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/juridik", {data:[{}],fetch:{},mutations:void 0});

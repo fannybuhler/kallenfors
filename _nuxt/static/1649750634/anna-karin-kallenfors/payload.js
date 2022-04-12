@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/anna-karin-kallenfors", {data:[{}],fetch:{},mutations:void 0});

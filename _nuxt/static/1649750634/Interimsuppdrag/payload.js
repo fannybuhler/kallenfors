@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/interimsuppdrag", {data:[{}],fetch:{},mutations:void 0});
