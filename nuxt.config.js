@@ -67,6 +67,6 @@ export default {
 
   // Router config
   router: {
-    base: '/kallenfors/'
+    base: '/'
   },
 }
