@@ -159,12 +159,9 @@ export default {
   }
 
   &__external-link {
-    // text-decoration-color: $pop;
     cursor: pointer;
     color: black;
-    font-size: 1.4rem;
-    vertical-align: text-top;
-    text-transform: uppercase;
+    font-weight: bold;
   }
 
   @media only screen and (min-width: $tablet) {

@@ -36,18 +36,17 @@
         <h4 class="footer__subheading">Kontakt</h4>
         <p class="footer__info-heading">Mail</p>
         <p class="footer__info-body">anna-karin@kallenfors.com</p>
-        <p class="footer__info-body">peter@kallenfors.com</p>
+        <p class="footer__info-body footer__info-body--last">peter@kallenfors.com</p>
         <p class="footer__info-heading">Telefon</p>
-        <p class="footer__info-body">070-267 83 03</p>
+        <p class="footer__info-body footer__info-body--last">070-267 83 03</p>
         <p class="footer__info-heading">Adress Stockholm</p>
-        <p class="footer__info-body">Bragevägen 21, <br> 112 24 Stockholm</p>
+        <p class="footer__info-body footer__info-body--last">Bragevägen 21, <br> 112 24 Stockholm</p>
         <p class="footer__info-heading">Adress Sundsvall</p>
-        <p class="footer__info-body">Skärsätt 118, <br> 862 95 Njurunda</p>
+        <p class="footer__info-body footer__info-body--last">Skärsätt 118, <br> 862 95 Njurunda</p>
         <h4 class="footer__subheading">Information</h4>
         <p class="footer__info-heading">Fakturainfo</p>
-        <!-- <i class="arrow right"></i> -->
         <p class="footer__info-body">inbox.lev851158@arkivplats.se</p>
-        <p class="footer__info-body">559175-1440</p>
+        <p class="footer__info-body footer__info-body--last">559175-1440</p>
         <p class="footer__copyright">© 2021 KÄLLENFORS</p>
       </div>
     </div>
@@ -206,8 +205,11 @@ select:-webkit-autofill:focus
   &__info-body {
     font-size: 16px;
     margin: 0;
-    padding-bottom: 30px;
     line-height: 160%;
+
+    &--last {
+      padding-bottom: 30px;
+    }
   }
 
   &__send-form-button {

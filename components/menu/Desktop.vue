@@ -83,7 +83,7 @@ a {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.1em;
+    height: 0.05em;
     background-color: $black;
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
