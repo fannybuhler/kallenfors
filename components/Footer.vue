@@ -35,12 +35,12 @@
       <div class="footer__info-wrapper">
         <h4 class="footer__subheading">Kontakt</h4>
         <p class="footer__info-heading">Mail</p>
-        <p class="footer__info-body">anna-karin@kallenfors.com</p>
-        <p class="footer__info-body footer__info-body--last">peter@kallenfors.com</p>
+        <a class="footer__info-body" href="mailto:anna-karin@kallenfors.com">anna-karin@kallenfors.com</a>
+        <a class="footer__info-body footer__info-body--last" href="mailto:peter@kallenfors.com">peter@kallenfors.com</a>
         <p class="footer__info-heading">Telefon</p>
-        <p class="footer__info-body footer__info-body--last">070-267 83 03</p>
+        <a class="footer__info-body footer__info-body--last" href="tel:0702678303">070-267 83 03</a>
         <p class="footer__info-heading">Adress Stockholm</p>
-        <p class="footer__info-body footer__info-body--last">Bragevägen 21, <br> 112 24 Stockholm</p>
+        <p class="footer__info-body footer__info-body--last">Bragevägen 21, <br> 114 24 Stockholm</p>
         <p class="footer__info-heading">Adress Sundsvall</p>
         <p class="footer__info-body footer__info-body--last">Skärsätt 118, <br> 862 95 Njurunda</p>
         <h4 class="footer__subheading">Information</h4>
@@ -141,6 +141,12 @@ label {
 input:hover,
 textarea:hover {
   border-color: $pop;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
 }
 
 input:-webkit-autofill,
