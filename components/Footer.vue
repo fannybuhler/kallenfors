@@ -47,7 +47,7 @@
         <p class="footer__info-heading">Fakturainfo</p>
         <p class="footer__info-body">inbox.lev851158@arkivplats.se</p>
         <p class="footer__info-body footer__info-body--last">559175-1440</p>
-        <p class="footer__copyright">© 2021 KÄLLENFORS</p>
+        <p class="footer__copyright">© 2022 KÄLLENFORS</p>
       </div>
     </div>
   </div>
