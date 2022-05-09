@@ -18,9 +18,9 @@
         <div class="person-hero__span"></div>
         <div class="person-hero__contact">
           <span class="person-hero__leading person-hero__leading--fade">Telefon</span>
-          <span class="person-hero__leading">{{ phone }}</span>
+          <a class="person-hero__leading" :href="`tel:${phone}`">{{ phone }}</a>
           <span class="person-hero__leading person-hero__leading--last person-hero__leading--fade">Mail</span>
-          <span class="person-hero__leading">{{ mail }}</span>
+          <a class="person-hero__leading" :href="`mailto:${mail}`">{{ mail }}</a>
         </div>
       </div>
     </div>
@@ -42,6 +42,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  text-decoration: none;
+  color: #000;
+}
 .person-hero {
   min-height: calc(100vh - 70px);
   background: $white;
@@ -76,7 +80,8 @@ export default {
   }
 
   &__content-wrapper {
-    background-color: $white; 
+    // background-color: transparent; 
+    z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
