@@ -43,6 +43,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://google-analytics.nuxtjs.org/setup
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -69,4 +71,13 @@ export default {
   router: {
     base: '/'
   },
+
+  googleAnalytics: {
+    id: 'UA-135134815-1',
+    // dev: false
+    // debug: {
+    //   enabled: true,
+    //   sendHitTask: false
+    // },
+  }
 }
