@@ -1,5 +1,5 @@
 <template>
-  <swiper class="carousel-card" ref="mySwiper" :options="swiperOptions" :navigation="true">
+  <swiper class="carousel-card" ref="mySwiper" :options="swiperOptions">
     <swiper-slide v-for="slides, index in carousel" :key="index">
       <CarouselSlide 
         :image="slides.image"
