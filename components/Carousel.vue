@@ -1,5 +1,5 @@
 <template>
-  <swiper class="carousel-card" ref="mySwiper" :options="swiperOptions">
+  <swiper class="carousel-card" ref="mySwiper" :options="swiperOptions" :navigation="true">
     <swiper-slide v-for="slides, index in carousel" :key="index">
       <CarouselSlide 
         :image="slides.image"
@@ -11,7 +11,9 @@
         :dark="slides.dark"
       />
     </swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
+    <div slot="pagination" class="swiper-pagination" ></div>
+    <div slot="button-prev" class="swiper-button-prev"></div>
+    <div slot="button-next" class="swiper-button-next"></div>
   </swiper>
 </template>
 
@@ -34,7 +36,11 @@ export default {
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
-        }
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
       },
     }
   },

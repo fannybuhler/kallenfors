@@ -35,3 +35,16 @@ p, h1, h2, h3, h4, h5, h6 {
 .swiper-pagination-bullet-active {
   background: #F8BD59!important;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000!important;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none!important;
+  }
+}
